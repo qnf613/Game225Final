@@ -1,0 +1,1243 @@
+fileFormatVersion: 2
+guid: 935a63b45affe544cb90dae7a5a7c434
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5050799044096650240
+    second: byGoldMetal_0
+  - first:
+      213: -5365916081699573742
+    second: byGoldMetal_1
+  - first:
+      213: -3916183670007848744
+    second: byGoldMetal_2
+  - first:
+      213: 5425857887288675639
+    second: byGoldMetal_3
+  - first:
+      213: -7005091877032163258
+    second: byGoldMetal_4
+  - first:
+      213: 9185193598801911995
+    second: byGoldMetal_5
+  - first:
+      213: 3107696228168304465
+    second: byGoldMetal_6
+  - first:
+      213: -7658797541089580615
+    second: byGoldMetal_7
+  - first:
+      213: 6606969042926007223
+    second: byGoldMetal_8
+  - first:
+      213: -6704307026658931648
+    second: byGoldMetal_9
+  - first:
+      213: 703034217862325858
+    second: byGoldMetal_10
+  - first:
+      213: 8274781135772396960
+    second: byGoldMetal_11
+  - first:
+      213: -4414332706649173197
+    second: byGoldMetal_12
+  - first:
+      213: -1483939482431683036
+    second: byGoldMetal_13
+  - first:
+      213: -5680049090636905295
+    second: byGoldMetal_14
+  - first:
+      213: 9002462068862205402
+    second: byGoldMetal_15
+  - first:
+      213: -7155799823189087263
+    second: byGoldMetal_16
+  - first:
+      213: 6774883226420319184
+    second: byGoldMetal_17
+  - first:
+      213: -6834728901382564397
+    second: byGoldMetal_18
+  - first:
+      213: -14168195098142594
+    second: byGoldMetal_19
+  - first:
+      213: 1760678286987067954
+    second: byGoldMetal_20
+  - first:
+      213: 4654880880817408608
+    second: byGoldMetal_21
+  - first:
+      213: 4496558758584660778
+    second: byGoldMetal_22
+  - first:
+      213: -6363282512455578156
+    second: byGoldMetal_23
+  - first:
+      213: 4033245526651492944
+    second: byGoldMetal_24
+  - first:
+      213: 8116867254835520128
+    second: byGoldMetal_25
+  - first:
+      213: 3187604039473501465
+    second: byGoldMetal_26
+  - first:
+      213: 5780382313153524604
+    second: byGoldMetal_27
+  - first:
+      213: -5939969182554205122
+    second: byGoldMetal_28
+  - first:
+      213: -8200304292230919726
+    second: byGoldMetal_29
+  - first:
+      213: 96859120212763493
+    second: byGoldMetal_30
+  - first:
+      213: -6325355327416373034
+    second: byGoldMetal_31
+  - first:
+      213: 6261157910873503354
+    second: byGoldMetal_32
+  - first:
+      213: -5078997024141043720
+    second: byGoldMetal_33
+  - first:
+      213: 8686088373614142292
+    second: byGoldMetal_34
+  - first:
+      213: -303249146802058812
+    second: byGoldMetal_35
+  - first:
+      213: 5824027634211521851
+    second: byGoldMetal_36
+  - first:
+      213: -3900523505314193648
+    second: byGoldMetal_37
+  - first:
+      213: -8115532553493304831
+    second: byGoldMetal_38
+  - first:
+      213: -6172563047141950411
+    second: byGoldMetal_39
+  - first:
+      213: 3277183234850852159
+    second: byGoldMetal_40
+  - first:
+      213: -8707768925722822036
+    second: byGoldMetal_41
+  - first:
+      213: 8641032650907249622
+    second: byGoldMetal_42
+  - first:
+      213: -8881291844331521540
+    second: byGoldMetal_43
+  - first:
+      213: 3005166368454549941
+    second: byGoldMetal_44
+  - first:
+      213: 2928739609888741946
+    second: byGoldMetal_45
+  - first:
+      213: 7106280103124522841
+    second: byGoldMetal_46
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: byGoldMetal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecef2e99acfe694fbdaf8fa333f3791
+      internalID: 5050799044096650240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725f38e5d86b71347b2fed7f1d2cc408
+      internalID: -5365916081699573742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718462e5d6d63fd45a9768bfbbc2b551
+      internalID: -3916183670007848744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75918c5a42b27f44a8b33013dfb31a4b
+      internalID: 5425857887288675639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_4
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3707de84b87b7a64db43e345dd97d3ab
+      internalID: -7005091877032163258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662a491ad10cc5647b4ba73fb5c87377
+      internalID: 9185193598801911995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bbb966da9adeb48b8bd76ce7e87a42
+      internalID: 3107696228168304465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96103d0cbd3874c4699705bed3d08d29
+      internalID: -7658797541089580615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7b3ed30d668b946b44b09166367cb8
+      internalID: 6606969042926007223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8bfd8fdf1a01c4bb66c2d750dd07d4
+      internalID: -6704307026658931648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68319295b796e4e43bffb47feeb02691
+      internalID: 703034217862325858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_11
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1177069ed38217a44909f0afe006aaa7
+      internalID: 8274781135772396960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee2606a9371fbd4293df488ff1bf27c
+      internalID: -4414332706649173197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_13
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da794c0299b46641a965ebf248b852e
+      internalID: -1483939482431683036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de44080d1277f4d4983a01d6459f3d56
+      internalID: -5680049090636905295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b89f2b7eb3b11449b01ce19cb4d304
+      internalID: 9002462068862205402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b1af59207dec7408052eae1f3a7582
+      internalID: -7155799823189087263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_17
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f9429d00d88df488ea073317964e6e
+      internalID: 6774883226420319184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_18
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea11ff889b76de4ca11ab18d0fc5e54
+      internalID: -6834728901382564397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0600711e628c98c4186af40f70c0d83d
+      internalID: -14168195098142594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5272d0c0fdadaf14397f9c5c9e0ab4ba
+      internalID: 1760678286987067954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e6d1cb8d8dadc44b9dd7047f18d14a
+      internalID: 4654880880817408608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_22
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f63b792f3413e4e9f9d07a363cbcfe
+      internalID: 4496558758584660778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_23
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60a4c21d9485684186075b89d1f3698
+      internalID: -6363282512455578156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_24
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c645beee4bcbb4c98993b41fdec3ce
+      internalID: 4033245526651492944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec0160987958134db8e4658e7652403
+      internalID: 8116867254835520128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_26
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636ef3a77240dbc4ea274c07a9453677
+      internalID: 3187604039473501465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_27
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a91aa71f8cce84f9a7b26904824bd0
+      internalID: 5780382313153524604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8728bf649e4c7249a11d1e14802fdd3
+      internalID: -5939969182554205122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_29
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3485d8de056404d8a638198c68ea56
+      internalID: -8200304292230919726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_30
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aa1fd16d9467f4f83791f94c3dc338
+      internalID: 96859120212763493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_31
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d1c97f90f03f6489cb33d6b9c623e2
+      internalID: -6325355327416373034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_32
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4390d0b1ba20fe94588bbff36310ad78
+      internalID: 6261157910873503354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_33
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e97b8033876da47b04af7317e66fe5
+      internalID: -5078997024141043720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_34
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd13e8a8753db14c8fc1373f523b690
+      internalID: 8686088373614142292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7bb1f6f96e07844a34b4f8b238af39
+      internalID: -303249146802058812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_36
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4692b14301420b44f84d96e5da2691ca
+      internalID: 5824027634211521851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_37
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af67b63f1de635546a58ddd4b9cca294
+      internalID: -3900523505314193648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_38
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66caa0594589dfe4da1a803a4c451ccf
+      internalID: -8115532553493304831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_39
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e1f79034a9c274cbc6f8620417a497
+      internalID: -6172563047141950411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_40
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec8651f8e67ceb4f8049ce1e1416f81
+      internalID: 3277183234850852159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_41
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34e42b7d1089594ebf689e3387db9ef
+      internalID: -8707768925722822036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181430da01a24634ea830036fbd9d950
+      internalID: 8641032650907249622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_43
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 10
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512b5d812d4d9d245a26c0081b3b71e2
+      internalID: -8881291844331521540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_44
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 10
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea84bf65fa939f2419cbef54c8545bee
+      internalID: 3005166368454549941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_45
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 10
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31644378adf054e4f9e92a47616fa512
+      internalID: 2928739609888741946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byGoldMetal_46
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 10
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5f18c1a909def469037353591f158d
+      internalID: 7106280103124522841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
