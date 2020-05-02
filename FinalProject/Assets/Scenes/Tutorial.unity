@@ -3253,8 +3253,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33, y: 48.75}
-  m_SizeDelta: {x: 340.9, y: 37.5}
+  m_AnchoredPosition: {x: 33, y: 60}
+  m_SizeDelta: {x: 340.9, y: 60.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842144598
 MonoBehaviour:
@@ -3289,7 +3289,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Move to Left - A, Right - D
 
-'
+    Esc to quit (temporary)'
 --- !u!222 &842144599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3562,7 +3562,7 @@ MonoBehaviour:
   bullet: {fileID: 5924802733086103877, guid: 91ef678a934c12c419a17ab0c72fba81, type: 3}
   pos: {fileID: 1435206912}
   cooltime: 1.5
-  AB1usable: 0
+  usable: 0
 --- !u!1 &1467563917
 GameObject:
   m_ObjectHideFlags: 0
@@ -3710,3 +3710,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooltime: 3
   isUsing: 0
+--- !u!1 &1799186945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799186947}
+  - component: {fileID: 1799186946}
+  m_Layer: 0
+  m_Name: Temp quit manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1799186946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799186945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3822e8213ee7bd24e9ee7fc8cd2d4cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1799186947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799186945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.865131, y: 6.1790676, z: -12.5390625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

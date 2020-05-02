@@ -8,7 +8,7 @@ public class Ability1 : MonoBehaviour
     public Transform pos;
     public float cooltime;
     private float curtime;
-    [SerializeField] private bool AB1usable = false;
+    [SerializeField] private bool usable = false;
     void Start()
     {
 
@@ -21,18 +21,18 @@ public class Ability1 : MonoBehaviour
         float z = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, z);
         //available condition + cool down
-        if (AB1usable == true)
+        if (usable == true)
         {
             if (Input.GetMouseButtonDown(0))
             {
                 Instantiate(bullet, pos.position, transform.rotation);
                 curtime = cooltime;
-                AB1usable = false;
+                usable = false;
             }
         }
         if (curtime <= 0f)
         {
-            AB1usable = true;
+            usable = true;
         }
         curtime -= Time.deltaTime;
     }

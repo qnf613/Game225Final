@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int abSwitch;
     public GameObject Shooter;
     public GameObject Mover;
-    private Ability2 ab2;
 
     //component
     private Rigidbody2D rigid;
