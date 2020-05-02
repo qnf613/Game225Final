@@ -8,9 +8,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpPower;
     [SerializeField] private int jumpcount = 0;
     //ability control
-    [SerializeField] private int abSwitch = 0;
+    [SerializeField] private int abSwitch;
     public GameObject Shooter;
     public GameObject Mover;
+    private Ability2 ab2;
 
     //component
     private Rigidbody2D rigid;
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        Shooter.SetActive(false);
         Mover.SetActive(false);
     }
 
@@ -73,13 +75,13 @@ public class PlayerController : MonoBehaviour
         if (abSwitch == 3)
         {
             Mover.SetActive(false);
-        }
-        if (abSwitch == 4)
-        {
+        //}
+        //if (abSwitch == 4)
+        //{
             
-        }
-        if (abSwitch > 4)
-        {
+        //}
+        //if (abSwitch > 4)
+        //{
             abSwitch = 1;
         }
 

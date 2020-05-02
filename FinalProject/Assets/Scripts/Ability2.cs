@@ -4,29 +4,50 @@ using UnityEngine;
 
 public class Ability2 : MonoBehaviour
 {
-    [SerializeField] public bool AB2usable = false;
     GameObject target;
     Vector2 targetPos;
+    GameObject player;
+    public float cooltime = 3.0f;
+    private float curtime = 0f;
+    private float usingTime = 0f;
+    public bool isUsing = false;
+
     // Start is called before the first frame update
     void Start()
     {
         target = null;
+        player = GameObject.Find("Player");
+        player.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0) && isUsing == false)
         {
             OjDetect();
-            if (target.CompareTag("MovableOb"))
-            {
-                Debug.Log("Movable");
-                target.transform.position = targetPos;
-            }
-
         }
+
+        else if (Input.GetMouseButton(0) && curtime < 0f)
+        {
+            if (target.CompareTag("MovableOb") && usingTime < 5.0f)
+            {
+                isUsing = true;
+                target.transform.position = targetPos;
+                usingTime += Time.deltaTime;
+            }
+            else if (usingTime >= 5.0f)
+            {
+                Release();
+            }
+        }
+        else if ((Input.GetMouseButtonUp(0) && isUsing == true))
+        {
+            Release();
+        }
+
+        curtime -= Time.deltaTime;
 
     }
 
@@ -38,9 +59,19 @@ public class Ability2 : MonoBehaviour
         if (hit.collider != null)
         {
             target = hit.collider.gameObject;
-            Debug.Log("Hit");
+
+        }
+        else
+        {
+            target = null;
         }
     }
 
+    public void Release()
+    {
+        usingTime = 0.0f;
+        isUsing = false;
+        curtime = cooltime;
+    }
 
 }
