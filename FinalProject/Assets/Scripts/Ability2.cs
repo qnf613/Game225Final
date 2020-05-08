@@ -26,7 +26,7 @@ public class Ability2 : MonoBehaviour
         targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetMouseButtonDown(0) && isUsing == false)
         {
-            OjDetect();
+            ObjDetect();
         }
 
         else if (Input.GetMouseButton(0) && curtime < 0f)
@@ -51,7 +51,7 @@ public class Ability2 : MonoBehaviour
 
     }
 
-    void OjDetect()
+    void ObjDetect()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
