@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] private float speed;
+    [SerializeField] private float repeat;
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("Destroy", 2);
+        Invoke("Destroy", repeat);
     }
 
     // Update is called once per frame
@@ -24,10 +25,14 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("ShootableOJ"))
+        if (collision.gameObject && !collision.CompareTag("Player"))
         {
             Destroy(gameObject);
+        }
+        if (collision.CompareTag("ShootableOb"))
+        {
             Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 

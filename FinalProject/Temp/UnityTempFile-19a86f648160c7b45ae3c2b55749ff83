@@ -304,6 +304,7 @@
 Assets\Scripts\Ability1.cs
 Assets\Scripts\Ability2.cs
 Assets\Scripts\Ability3.cs
+Assets\Scripts\Ability4.cs
 Assets\Scripts\Bullet.cs
 Assets\Scripts\Enemy.cs
 Assets\Scripts\Objects.cs

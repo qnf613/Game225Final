@@ -4,35 +4,45 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    //TODO:
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anima;
-    GameObject target;
+    [SerializeField] GameObject target;
+    [SerializeField] private int HP;
 
     public int nextMove;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anima = GetComponent<Animator>();
+        //anima = GetComponent<Animator>();
         //call Direction() since this object has been appeared
         Invoke("Direction", 0);
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         //moving && animations
         rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
-        if (rigid.velocity.normalized.x != 0)
+        //if (rigid.velocity.normalized.x != 0)
+        //{
+        //    anima.SetBool("isWalking", true);
+        //}
+        //else
+        //{
+        //    anima.SetBool("isWalking", false);
+        //}
+        //Death & destory
+        if(HP <= 0)
         {
-            anima.SetBool("isWalking", true);
+            Destroy(gameObject);
         }
-        else
-        {
-            anima.SetBool("isWalking", false);
-        }
+
+        Debug.DrawRay(rigid.position, Vector3.up, Color.red);
+
     }
 
     //deciding direction
@@ -41,27 +51,44 @@ public class Enemy : MonoBehaviour
         //decide left, stop, right
         nextMove = Random.Range(-1, 2);
         //flip the sprites when it facing right side
-        if (nextMove != 0)
-        {
-            spriteRenderer.flipX = nextMove == 1;
-        }
+        //if (nextMove != 0)
+        //{
+        //    spriteRenderer.flipX = nextMove == 1;
+        //}
         //makes the enemy's direction deciding more randomly
         float nextDirectionTime = Random.Range(2f, 4f);
         //repeat this method itself
         Invoke("Direction", nextDirectionTime);
     }
-    //trigger chasing player, damaged by bullet
-    void OnCollisionEnter2D(Collision2D collision)
+    
+    //trigger chasing player, damaged by movable objects
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        //detect the ground
-        RaycastHit2D rayHitright = Physics2D.Raycast(rigid.position, Vector3.right, 3.5f);
-        RaycastHit2D rayHitleft = Physics2D.Raycast(rigid.position, Vector3.left, 3.5f);
-
-        if (rayHitright.collider.CompareTag("Player") || rayHitleft.collider.CompareTag("Player"))
+        RaycastHit2D rayHitup = Physics2D.Raycast(rigid.position, Vector3.up, 10f);
+        if (collision != null)
         {
-            target = collision.gameObject;
-            
-            
+            if (collision.gameObject.tag == "MovableOb")
+            {
+                HP = HP - 5;
+            }
         }
+
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        //damaged by bullet
+        if (collision.CompareTag("Projectile"))
+        {
+            HP = HP - 3;
+        }
+
+        //detect falling obj
+        //if (collision.CompareTag("MovableOb"))
+        //{
+        //    //TODO: add knockback
+        //    HP = HP - 5;
+        //}
+
+
     }
 }

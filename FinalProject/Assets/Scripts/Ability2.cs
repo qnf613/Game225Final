@@ -4,48 +4,60 @@ using UnityEngine;
 
 public class Ability2 : MonoBehaviour
 {
-    GameObject target;
-    Vector2 targetPos;
+    GameObject movingObject;
     GameObject player;
-    public float cooltime = 3.0f;
+    Rigidbody2D playerRigid;
+    Vector2 targetPos;
+    [SerializeField]private float cooltime;
     private float curtime = 0f;
-    private float usingTime = 0f;
-    public bool isUsing = false;
+    private float duration = 0f;
+    [SerializeField] private float maxDuration = 5.0f;
+    [SerializeField] private bool isUsing = false;
+    //[SerializeField] private float moveSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-        target = null;
+        movingObject = null;
         player = GameObject.Find("Player");
-        player.GetComponent<Rigidbody2D>();
+        playerRigid = player.GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetMouseButtonDown(0) && isUsing == false)
+        if (Input.GetMouseButtonDown(1) && !isUsing)
         {
             ObjDetect();
         }
 
         else if (Input.GetMouseButton(0) && curtime < 0f)
         {
-            if (target.CompareTag("MovableOb") && usingTime < 5.0f)
+            if (movingObject.CompareTag("MovableOb") && duration <= maxDuration)
             {
                 isUsing = true;
-                target.transform.position = targetPos;
-                usingTime += Time.deltaTime;
+                if (isUsing)
+                {
+                    playerRigid.velocity = new Vector2(0, 0);
+                    
+                }
+
+                movingObject.transform.position = targetPos;
+
+                duration += Time.deltaTime;
             }
-            else if (usingTime >= 5.0f)
+            else if (duration >= maxDuration)
             {
                 Release();
             }
         }
-        else if ((Input.GetMouseButtonUp(0) && isUsing == true))
-        {
-            Release();
-        }
+
+        //else if ((Input.GetMouseButtonUp(0) && isUsing))
+        //{
+        //    Release();
+        //}
 
         curtime -= Time.deltaTime;
 
@@ -58,18 +70,18 @@ public class Ability2 : MonoBehaviour
 
         if (hit.collider != null)
         {
-            target = hit.collider.gameObject;
+            movingObject = hit.collider.gameObject;
 
         }
         else
         {
-            target = null;
+            movingObject = null;
         }
     }
 
     public void Release()
     {
-        usingTime = 0.0f;
+        duration = 0.0f;
         isUsing = false;
         curtime = cooltime;
     }

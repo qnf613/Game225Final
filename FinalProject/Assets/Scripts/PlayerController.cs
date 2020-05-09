@@ -7,18 +7,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private int jumpcount = 0;
+    public int HP { get; private set; }
     //ability control
     [SerializeField] private int abSwitch;
     public GameObject Shooter;
     public GameObject Mover;
-
+    public GameObject Barrier;
+    public GameObject Freezer;
+    Ability2 ab2;
     //component
     private Rigidbody2D rigid;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
     
-
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,8 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         Shooter.SetActive(false);
         Mover.SetActive(false);
+        Barrier.SetActive(false);
+        Freezer.SetActive(false);
     }
 
     // Update is called once per frame
@@ -74,16 +78,32 @@ public class PlayerController : MonoBehaviour
         if (abSwitch == 3)
         {
             Mover.SetActive(false);
-        //}
-        //if (abSwitch == 4)
-        //{
-            
-        //}
-        //if (abSwitch > 4)
-        //{
+            Barrier.SetActive(true);
+        }
+        if (abSwitch == 4)
+        {
+            Barrier.SetActive(false);
+            Freezer.SetActive(true);
+        }
+        if (abSwitch > 4)
+        {
+            Freezer.SetActive(false);
             abSwitch = 1;
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+
+        }
+
+        if (collision.CompareTag("Projectile"))
+        {
+
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -98,6 +118,11 @@ public class PlayerController : MonoBehaviour
                 jumpcount = 0;
             }
         }
+    }
+
+    public void isContact()
+    {
+
     }
 
 }

@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8625539526273768237}
   - component: {fileID: 6342219740620880756}
-  - component: {fileID: 6312838966481069128}
+  - component: {fileID: 3340340683749774220}
+  - component: {fileID: 2808119817618099454}
   m_Layer: 0
   m_Name: TempBullet
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1314199653
-  m_SortingLayer: 2
+  m_SortingLayerID: -128176095
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 8116867254835520128, guid: 935a63b45affe544cb90dae7a5a7c434,
     type: 3}
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6312838966481069128
+--- !u!114 &3340340683749774220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,7 +92,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5924802733086103877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2042e5df518d414cadd790aaf8e97a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6eea75147a533a048828f07f18c42719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  repeat: 0.5
+--- !u!58 &2808119817618099454
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5924802733086103877}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.25
