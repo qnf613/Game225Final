@@ -41,7 +41,6 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
 
-        Debug.DrawRay(rigid.position, Vector3.up, Color.red);
 
     }
 
@@ -81,14 +80,6 @@ public class Enemy : MonoBehaviour
         {
             HP = HP - 3;
         }
-
-        //detect falling obj
-        //if (collision.CompareTag("MovableOb"))
-        //{
-        //    //TODO: add knockback
-        //    HP = HP - 5;
-        //}
-
 
     }
 }
