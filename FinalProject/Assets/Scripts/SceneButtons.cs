@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneButtons : MonoBehaviour
 {
-
+    //[SerializeField] private string nextSceneName;
     public void loadCredit()
     {
         Application.LoadLevel(1);
@@ -26,5 +26,10 @@ public class SceneButtons : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    SceneManager.LoadScene(nextSceneName);
+    //}
 }
 
