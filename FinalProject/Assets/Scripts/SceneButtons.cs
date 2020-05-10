@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneButtons : MonoBehaviour
 {
-    public void loadGame()
+
+    public void loadCredit()
     {
         Application.LoadLevel(1);
     }
 
-    public void loadCredit()
+    public void loadGame()
     {
         Application.LoadLevel(2);
     }

@@ -8,7 +8,8 @@ TagManager:
   - MovableOb
   - ShootableOb
   - Enemy
-  - Bullet
+  - Projectile
+  - Barrier
   layers:
   - Default
   - TransparentFX
@@ -19,12 +20,12 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - STO
+  - MVO
+  - Barrier
+  - Enemy
+  - Player
+  - PlayerDamaged
   - 
   - 
   - 

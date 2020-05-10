@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ability3 : MonoBehaviour
 {
+    GameObject player;
     [SerializeField]private float cooltime;
     [SerializeField] private float curtime;
     [SerializeField] private float duration = 0.0f;
@@ -13,16 +14,16 @@ public class Ability3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         spriterenderer = GetComponent<SpriteRenderer>();
         this.GetComponent<SpriteRenderer>().enabled = false;
-        this.GetComponent<PolygonCollider2D>().enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         //active condition
-        if (Input.GetMouseButton(0) && curtime < 0f)
+        if (Input.GetMouseButtonDown(0) && curtime < 0f)
         {
             //duration check
             isUsing = true;
@@ -30,14 +31,13 @@ public class Ability3 : MonoBehaviour
             if (isUsing)
             {
                 duration += Time.deltaTime;
-
             }
             //turn off conditions
             if (duration >= maxDuration)
             {
                 duration = 0.0f;
                 isUsing = false;
-                this.GetComponent<PolygonCollider2D>().enabled = false;
+                player.layer = 13;
                 this.GetComponent<SpriteRenderer>().enabled = false;
                 curtime = cooltime;
             }
@@ -47,7 +47,7 @@ public class Ability3 : MonoBehaviour
         else if (isUsing && Input.GetMouseButtonUp(0))
         {
             isUsing = false;
-            this.GetComponent<PolygonCollider2D>().enabled = false;
+            player.layer = 13;
             this.GetComponent<SpriteRenderer>().enabled = false;
             //cooldown reduce
             if (!isUsing && duration < maxDuration)
@@ -68,10 +68,9 @@ public class Ability3 : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-        if ((isUsing && collision.CompareTag("Enemy")) || (isUsing && collision.CompareTag("MovableOb")))
+        if (isUsing && collision.CompareTag("Enemy"))
         {
-            this.GetComponent<PolygonCollider2D>().enabled = true;
-
+            player.layer = 14;
         }
         
     }

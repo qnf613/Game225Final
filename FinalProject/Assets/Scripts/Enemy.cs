@@ -64,8 +64,8 @@ public class Enemy : MonoBehaviour
     //trigger chasing player, damaged by movable objects
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        RaycastHit2D rayHitup = Physics2D.Raycast(rigid.position, Vector3.up, 10f);
-        if (collision != null)
+        RaycastHit2D rayHitup = Physics2D.Raycast(rigid.position, Vector3.up, .3f);
+        if (rayHitup.collider != null)
         {
             if (collision.gameObject.tag == "MovableOb")
             {

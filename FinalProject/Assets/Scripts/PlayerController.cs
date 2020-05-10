@@ -7,20 +7,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private int jumpcount = 0;
-    public int HP { get; private set; }
+    [SerializeField] private int HP;
+    private bool isContacted = false;
     //ability control
     [SerializeField] private int abSwitch;
     public GameObject Shooter;
     public GameObject Mover;
     public GameObject Barrier;
     public GameObject Freezer;
-    Ability2 ab2;
     //component
     private Rigidbody2D rigid;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -91,13 +90,20 @@ public class PlayerController : MonoBehaviour
             abSwitch = 1;
         }
 
+        //death check
+        if (HP <= 0)
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
-
+            inContact();
+            Debug.Log("Contact");
         }
 
         if (collision.CompareTag("Projectile"))
@@ -106,7 +112,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         //detect the ground
         RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 0.1f);
@@ -120,9 +126,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void isContact()
+    public void inContact()
     {
+        //TODO: Sound
+        isContacted = true;
+        HP -= 1;
+        spriteRenderer.color = new Color(1, 1, 1, .4f);
+        gameObject.layer = 14;
+        Invoke("OutContact", 2f);
+    }
 
+    public void OutContact()
+    {
+        isContacted = true;
+        gameObject.layer = 13;
+        spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 
 }
