@@ -10,7 +10,7 @@ public class Ability1 : MonoBehaviour
     private float curtime;
     [SerializeField] private bool usable = false;
     //laser point related
-    private float length;
+    [SerializeField] private float length;
     private LineRenderer render;
     void Start()
     {

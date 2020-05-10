@@ -7,6 +7,7 @@ public class Ability2 : MonoBehaviour
     GameObject movingObject;
     GameObject player;
     Rigidbody2D playerRigid;
+    Rigidbody2D objRigid;
     Vector2 targetPos;
     [SerializeField]private float cooltime;
     private float curtime = 0f;
@@ -21,14 +22,20 @@ public class Ability2 : MonoBehaviour
         movingObject = null;
         player = GameObject.Find("Player");
         playerRigid = player.GetComponent<Rigidbody2D>();
-        
+        objRigid = movingObject.GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetMouseButtonDown(1) && !isUsing)
+        if (movingObject != null)
+        {
+            objRigid = movingObject.GetComponent<Rigidbody2D>();
+        }
+        //activate conditions
+        if (Input.GetMouseButtonDown(0) && !isUsing)
         {
             ObjDetect();
         }
@@ -45,7 +52,7 @@ public class Ability2 : MonoBehaviour
                 }
 
                 movingObject.transform.position = targetPos;
-
+                
                 duration += Time.deltaTime;
             }
             else if (duration >= maxDuration)
@@ -54,16 +61,16 @@ public class Ability2 : MonoBehaviour
             }
         }
 
-        //else if ((Input.GetMouseButtonUp(0) && isUsing))
-        //{
-        //    Release();
-        //}
+        else if ((Input.GetMouseButtonUp(0) && isUsing))
+        {
+            Release();
+        }
 
         curtime -= Time.deltaTime;
 
     }
 
-    void ObjDetect()
+    public void ObjDetect()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
@@ -78,6 +85,7 @@ public class Ability2 : MonoBehaviour
             movingObject = null;
         }
     }
+
 
     public void Release()
     {

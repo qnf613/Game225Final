@@ -9,10 +9,12 @@ public class Ability3 : MonoBehaviour
     [SerializeField] private float duration = 0.0f;
     private float maxDuration = 3.0f;
     [SerializeField] private bool isUsing = false;
-
+    SpriteRenderer spriterenderer;
     // Start is called before the first frame update
     void Start()
     {
+        spriterenderer = GetComponent<SpriteRenderer>();
+        this.GetComponent<SpriteRenderer>().enabled = false;
         this.GetComponent<PolygonCollider2D>().enabled = false;
     }
 
@@ -24,6 +26,7 @@ public class Ability3 : MonoBehaviour
         {
             //duration check
             isUsing = true;
+            spriterenderer.enabled = true;
             if (isUsing)
             {
                 duration += Time.deltaTime;
@@ -35,6 +38,7 @@ public class Ability3 : MonoBehaviour
                 duration = 0.0f;
                 isUsing = false;
                 this.GetComponent<PolygonCollider2D>().enabled = false;
+                this.GetComponent<SpriteRenderer>().enabled = false;
                 curtime = cooltime;
             }
             
@@ -44,6 +48,7 @@ public class Ability3 : MonoBehaviour
         {
             isUsing = false;
             this.GetComponent<PolygonCollider2D>().enabled = false;
+            this.GetComponent<SpriteRenderer>().enabled = false;
             //cooldown reduce
             if (!isUsing && duration < maxDuration)
             {
@@ -66,7 +71,7 @@ public class Ability3 : MonoBehaviour
         if ((isUsing && collision.CompareTag("Enemy")) || (isUsing && collision.CompareTag("MovableOb")))
         {
             this.GetComponent<PolygonCollider2D>().enabled = true;
-            
+
         }
         
     }
