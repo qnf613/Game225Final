@@ -44,6 +44,11 @@ public class Enemy : MonoBehaviour
 
     }
 
+    public void FixedUpdate()
+    {
+
+    }
+
     //deciding direction
     void Direction()
     {
@@ -60,26 +65,13 @@ public class Enemy : MonoBehaviour
         Invoke("Direction", nextDirectionTime);
     }
     
-    //trigger chasing player, damaged by movable objects
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        RaycastHit2D rayHitup = Physics2D.Raycast(rigid.position, Vector3.up, .3f);
-        if (rayHitup.collider != null)
-        {
-            if (collision.gameObject.tag == "MovableOb")
-            {
-                HP = HP - 5;
-            }
-        }
 
-    }
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collider)
     {
         //damaged by bullet
-        if (collision.CompareTag("Projectile"))
+        if (collider.CompareTag("Projectile"))
         {
             HP = HP - 3;
         }
-
     }
 }

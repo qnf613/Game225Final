@@ -86,7 +86,9 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\SceneButtons.cs" />
+    <Compile Include="Assets\Scripts\SceneTrigger.cs" />
     <Compile Include="Assets\Scripts\TempQuit.cs" />
+    <Compile Include="Assets\Scripts\UIUpdate.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Eric/Documents/GitHub/Game225Final/FinalProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

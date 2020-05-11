@@ -7,14 +7,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private int jumpcount = 0;
-    [SerializeField] private int HP;
+    [SerializeField] public static int HP = 3;
+    [SerializeField] public static string CurrentAb = "Shooter";
     private bool isContacted = false;
     //ability control
-    [SerializeField] private int abSwitch;
-    public GameObject Shooter;
-    public GameObject Mover;
-    public GameObject Barrier;
-    public GameObject Freezer;
+    //default ability setup
+    private int abSwitch = 1;
+    private int maxAbility = 1;
+    [SerializeField] private GameObject Shooter;
+    //ability that need to be accquired
+    [SerializeField] private bool havingAb2 = false;
+    [SerializeField] private GameObject Mover;
+    [SerializeField] private bool havingAb3 = false;
+    [SerializeField] private GameObject Barrier;
+    [SerializeField] private bool havingAb4 = false;
+    [SerializeField] private GameObject Freezer;
+
     //component
     private Rigidbody2D rigid;
     private SpriteRenderer spriteRenderer;
@@ -26,7 +34,6 @@ public class PlayerController : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        Shooter.SetActive(false);
         Mover.SetActive(false);
         Barrier.SetActive(false);
         Freezer.SetActive(false);
@@ -58,36 +65,73 @@ public class PlayerController : MonoBehaviour
             }
             jumpcount++;
         }
-
+        
         //changing abilities
-        if (Input.GetKeyDown(KeyCode.E))
+        //if player doesn't hav any new abilities, switch doesn't work
+        if (Input.GetKeyDown(KeyCode.E) && maxAbility > 1)
         {
             abSwitch++;
         }
 
         if (abSwitch == 1)
         {
-            Shooter.SetActive(true);
+           Shooter.SetActive(true);
+           CurrentAb = "Shooter";
+           
         }
+
         if (abSwitch == 2)
         {
             Shooter.SetActive(false);
             Mover.SetActive(true);
+            CurrentAb = "Mover";
+            
         }
         if (abSwitch == 3)
         {
             Mover.SetActive(false);
             Barrier.SetActive(true);
+            CurrentAb = "Barrier";
+            //check if player doesnt hav barrier yet, if so turn on shooter, not barrier
+            if (maxAbility < 3)
+            {
+                abSwitch = 1;
+                Barrier.SetActive(false);
+            }
+
+
         }
         if (abSwitch == 4)
         {
             Barrier.SetActive(false);
             Freezer.SetActive(true);
+            CurrentAb = "Freezer";
+            //check if player doesnt hav barrier yet, if so turn on shooter, not freezer
+            if (maxAbility < 4)
+            {
+                Freezer.SetActive(false);
+                abSwitch = 1;
+            }
         }
+
         if (abSwitch > 4)
         {
             Freezer.SetActive(false);
             abSwitch = 1;
+        }
+
+        //check player accquire the ability
+        if (havingAb2)
+        {
+            maxAbility = 2;
+        }
+        if (havingAb3)
+        {
+            maxAbility = 3;
+        }
+        if (havingAb4)
+        {
+            maxAbility = 4;
         }
 
         //death check
@@ -100,33 +144,40 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        //being damaged
+        if (collision.CompareTag("Enemy") || collision.CompareTag("NP.Projectile"))
         {
-            inContact();
-            Debug.Log("Contact");
+            Damaged();
+        }
+        //get new abilities
+        if (collision.CompareTag("GetMover"))
+        {
+            Destroy(collision.gameObject);
+            havingAb2 = true;
+        }
+        if (collision.CompareTag("GetBarrier"))
+        {
+            Destroy(collision.gameObject);
+            havingAb3 = true;
+        }
+        if (collision.CompareTag("GetFreezer"))
+        {
+            Destroy(collision.gameObject);
+            havingAb4 = true;
         }
 
-        if (collision.CompareTag("Projectile"))
-        {
-
-        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        //detect the ground
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 0.1f);
-
-        if (rayHit.collider != null)
+        if (collision.gameObject.tag == "Ground")
         {
-            if (collision.gameObject.tag =="Ground")
-            {
-                jumpcount = 0;
-            }
+            jumpcount = 0;
         }
+
     }
 
-    public void inContact()
+    void Damaged()
     {
         //TODO: Sound
         isContacted = true;
@@ -136,7 +187,7 @@ public class PlayerController : MonoBehaviour
         Invoke("OutContact", 2f);
     }
 
-    public void OutContact()
+    void OutContact()
     {
         isContacted = true;
         gameObject.layer = 13;

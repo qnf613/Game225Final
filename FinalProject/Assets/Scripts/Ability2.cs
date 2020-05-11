@@ -22,7 +22,7 @@ public class Ability2 : MonoBehaviour
         movingObject = null;
         player = GameObject.Find("Player");
         playerRigid = player.GetComponent<Rigidbody2D>();
-        objRigid = movingObject.GetComponent<Rigidbody2D>();
+        //objRigid = movingObject.GetComponent<Rigidbody2D>();
 
     }
 
@@ -48,7 +48,6 @@ public class Ability2 : MonoBehaviour
                 if (isUsing)
                 {
                     playerRigid.velocity = new Vector2(0, 0);
-                    
                 }
 
                 movingObject.transform.position = targetPos;
