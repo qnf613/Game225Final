@@ -24,7 +24,7 @@ public class Ability3 : MonoBehaviour
     {
         //active condition
         //TODO: SE
-        if (Input.GetMouseButtonDown(0) && curtime < 0f)
+        if (Input.GetMouseButton(0) && curtime < 0f)
         {
             //duration check
             isUsing = true;

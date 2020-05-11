@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private int jumpcount = 0;
-    [SerializeField] public static int HP = 3;
+    [SerializeField] public static int HP;
     [SerializeField] public static string CurrentAb = "Shooter";
     private bool isContacted = false;
     //ability control
@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        HP = 3;
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();

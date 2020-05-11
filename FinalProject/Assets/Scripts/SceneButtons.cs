@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneButtons : MonoBehaviour
 {
-    //[SerializeField] private string nextSceneName;
+    [SerializeField] private string CurrentScene;
+
     public void loadCredit()
     {
         SceneManager.LoadScene("Credit");
@@ -25,6 +26,11 @@ public class SceneButtons : MonoBehaviour
     public void backToMain()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void reStart()
+    {
+        SceneManager.LoadScene(CurrentScene);
     }
 
 }
