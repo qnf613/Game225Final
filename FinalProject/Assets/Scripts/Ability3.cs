@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Ability3 : MonoBehaviour
 {
-    GameObject player;
-    [SerializeField]private float cooltime;
-    [SerializeField] private float curtime;
-    [SerializeField] private float duration = 0.0f;
+    [SerializeField] private float cooltime;
+    private float curtime;
+    private float duration;
     private float maxDuration = 3.0f;
-    [SerializeField] private bool isUsing = false;
+    private bool isUsing = false;
     SpriteRenderer spriterenderer;
+    GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,7 @@ public class Ability3 : MonoBehaviour
     void Update()
     {
         //active condition
+        //TODO: SE
         if (Input.GetMouseButtonDown(0) && curtime < 0f)
         {
             //duration check
@@ -68,10 +69,15 @@ public class Ability3 : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        
+    }
+
+    void OnTriggerStay2D(Collider2D collision)
+    {
         if (isUsing && collision.CompareTag("Enemy"))
         {
             player.layer = 14;
         }
-        
+
     }
 }

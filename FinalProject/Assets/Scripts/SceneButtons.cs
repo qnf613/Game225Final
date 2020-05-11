@@ -8,12 +8,12 @@ public class SceneButtons : MonoBehaviour
     //[SerializeField] private string nextSceneName;
     public void loadCredit()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene("Credit");
     }
 
     public void loadGame()
     {
-        Application.LoadLevel(2);
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void exitGame()
@@ -27,9 +27,5 @@ public class SceneButtons : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    SceneManager.LoadScene(nextSceneName);
-    //}
 }
 

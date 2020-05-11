@@ -12,8 +12,8 @@ public class Ability2 : MonoBehaviour
     [SerializeField]private float cooltime;
     private float curtime = 0f;
     private float duration = 0f;
-    [SerializeField] private float maxDuration = 5.0f;
-    [SerializeField] private bool isUsing = false;
+    private float maxDuration = 5.0f;
+    private bool isUsing = false;
     //[SerializeField] private float moveSpeed;
 
     // Start is called before the first frame update
@@ -30,11 +30,14 @@ public class Ability2 : MonoBehaviour
     void Update()
     {
         targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (movingObject != null)
-        {
-            objRigid = movingObject.GetComponent<Rigidbody2D>();
-        }
+        
+        //if (movingObject != null)
+        //{
+        //    objRigid = movingObject.GetComponent<Rigidbody2D>();
+        //}
+
         //activate conditions
+        //TODO: SE
         if (Input.GetMouseButtonDown(0) && !isUsing)
         {
             ObjDetect();

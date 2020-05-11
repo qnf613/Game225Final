@@ -14,6 +14,7 @@ TagManager:
   - GetMover
   - GetBarrier
   - GetFreezer
+  - FreezBomb
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Ground
   - STO
   - MVO
-  - Barrier
+  - Freezer
   - Enemy
   - Player
   - PlayerDamaged

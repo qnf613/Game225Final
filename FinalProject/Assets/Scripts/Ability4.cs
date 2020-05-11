@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Ability4 : MonoBehaviour
 {
-    private float cooltime;
+    [SerializeField]private float cooltime;
     private float curtime;
-    private float maxXrange;
-    private float maxyrange;
+    private bool usable = false;
+    //projectile
+    public GameObject freezbomb;
+    //start point position
+    public Transform pos;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +20,36 @@ public class Ability4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //get target (mouse cursor) position
-        Vector2 target = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float z = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, z);
+        LookMouse();
+        //available condition & cool down
+        if (usable)
+        {
+            //TODO: SE
+            if (Input.GetMouseButtonDown(0))
+            {
+                Throw();
+                curtime = cooltime;
+                usable = false;
+            }
+        }
+        if (curtime <= 0f)
+        {
+            usable = true;
+        }
+        curtime -= Time.deltaTime;
+    }
+
+    void LookMouse()
+    {
+        Vector2 targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 dirPos = new Vector2(targetPos.x - pos.position.x, targetPos.y - pos.position.y);
+
+        pos.right = dirPos;
+    }
+
+    void Throw()
+    {
+        GameObject go = Instantiate(freezbomb, pos.position, transform.rotation);
+        go.GetComponent<Rigidbody2D>().velocity = go.transform.right * 10f;
     }
 }

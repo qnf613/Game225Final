@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    //TODO:
+    //TODO:apply animation
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anima;

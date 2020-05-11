@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //TODO: animation
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private int jumpcount = 0;
@@ -170,6 +171,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        //re-set jump count
         if (collision.gameObject.tag == "Ground")
         {
             jumpcount = 0;

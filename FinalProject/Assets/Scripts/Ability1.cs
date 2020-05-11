@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Ability1 : MonoBehaviour
 {
-    public GameObject bullet;
-    public Transform pos;
+
     [SerializeField] private float cooltime;
     private float curtime;
-    [SerializeField] private bool usable = false;
+    private bool usable = false;
+    //projectile
+    public GameObject bullet;
+    //start point position
+    public Transform pos;
     //laser point related
     [SerializeField] private float length;
     private LineRenderer render;
@@ -20,13 +23,12 @@ public class Ability1 : MonoBehaviour
 
     void Update()
     {
-        //get target (mouse cursor) position
-        Vector2 target = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float z = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, z);
-        //available condition + cool down
+        LookMouse();
+        LaserPoint();
+        //available condition & cool down
         if (usable)
         {
+            //TODO: SE
             if (Input.GetMouseButtonDown(0))
             {
                 Instantiate(bullet, pos.position, transform.rotation);
@@ -40,7 +42,18 @@ public class Ability1 : MonoBehaviour
         }
         curtime -= Time.deltaTime;
 
-        //laser pointer
+    }
+
+    void LookMouse()
+    {
+        //get target (mouse cursor) position
+        Vector2 targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float z = Mathf.Atan2(targetPos.y, targetPos.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, z);
+    }
+
+    void LaserPoint()
+    {
         Vector3 endPos = transform.position + (transform.right * length);
         render.SetPositions(new Vector3[] { transform.position, endPos });
     }
