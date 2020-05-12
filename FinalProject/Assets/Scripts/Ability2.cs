@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class Ability2 : MonoBehaviour
 {
+    //components
     GameObject movingObject;
     GameObject player;
     Rigidbody2D playerRigid;
     Rigidbody2D objRigid;
-    Vector2 targetPos;
+    //object moving related 
+    private Vector2 targetPos;
+    [SerializeField] private float movingSpeed = 15.0f;
+    //using condition related
     [SerializeField]private float cooltime;
     private float curtime = 0f;
     private float duration = 0f;
-    private float maxDuration = 5.0f;
+    [SerializeField]private float maxDuration;
     private bool isUsing = false;
-    //[SerializeField] private float moveSpeed;
+    //for fixed update
+    private bool btPressed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,20 +27,14 @@ public class Ability2 : MonoBehaviour
         movingObject = null;
         player = GameObject.Find("Player");
         playerRigid = player.GetComponent<Rigidbody2D>();
-        //objRigid = movingObject.GetComponent<Rigidbody2D>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        targetPos = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         
-        //if (movingObject != null)
-        //{
-        //    objRigid = movingObject.GetComponent<Rigidbody2D>();
-        //}
-
         //activate conditions
         //TODO: SE
         if (Input.GetMouseButtonDown(0) && !isUsing)
@@ -43,34 +42,48 @@ public class Ability2 : MonoBehaviour
             ObjDetect();
         }
 
-        else if (Input.GetMouseButton(0) && curtime < 0f)
+        //check duration and
+        else if (Input.GetMouseButton(0) && curtime < 0f && movingObject != null)
         {
+            //trigger physics engine movement
+            btPressed = true;
             if (movingObject.CompareTag("MovableOb") && duration <= maxDuration)
             {
                 isUsing = true;
-                if (isUsing)
-                {
-                    playerRigid.velocity = new Vector2(0, 0);
-                }
-
-                movingObject.transform.position = targetPos;
-                
                 duration += Time.deltaTime;
             }
+            //turn off condition
             else if (duration >= maxDuration)
             {
                 Release();
+                btPressed = false;
             }
         }
 
         else if ((Input.GetMouseButtonUp(0) && isUsing))
         {
             Release();
+            btPressed = false;
         }
 
         curtime -= Time.deltaTime;
 
     }
+
+    public void FixedUpdate()
+    {
+        //moveing objects
+        if (btPressed)
+        {
+            Move(targetPos);
+        }
+        //hold player position
+        if (isUsing)
+        {
+            playerRigid.velocity = new Vector2(0, 0);
+        }
+    }
+
 
     public void ObjDetect()
     {
@@ -80,12 +93,18 @@ public class Ability2 : MonoBehaviour
         if (hit.collider != null)
         {
             movingObject = hit.collider.gameObject;
+            objRigid = movingObject.GetComponent<Rigidbody2D>();
 
         }
         else
         {
             movingObject = null;
         }
+    }
+
+    public void Move(Vector2 direction)
+    {
+        objRigid.MovePosition((Vector2)movingObject.transform.position + (direction * movingSpeed * Time.deltaTime));
     }
 
 

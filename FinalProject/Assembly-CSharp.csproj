@@ -88,6 +88,8 @@
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\SceneButtons.cs" />
     <Compile Include="Assets\Scripts\SceneTrigger.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Scripts\TempKeepPlayer.cs" />
     <Compile Include="Assets\Scripts\TempQuit.cs" />
     <Compile Include="Assets\Scripts\UIUpdate.cs" />
     <Reference Include="Unity.Timeline.Editor">

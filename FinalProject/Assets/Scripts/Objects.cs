@@ -17,18 +17,26 @@ public class Objects : MonoBehaviour
 
     void Update()
     {
-
-
+        
+        
     }
 
+    void FixedUpdate()
+    {
+    }
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             this.rigid.transform.position = rigid.transform.position;
         }
+        
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        
     }
 
 
