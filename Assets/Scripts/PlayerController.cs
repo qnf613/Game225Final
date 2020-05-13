@@ -186,6 +186,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground" && jumpcount == 0)
+        {
+            jumpcount = 1;
+        }
+    }
+
     void Damaged()
     {
         //TODO: Sound

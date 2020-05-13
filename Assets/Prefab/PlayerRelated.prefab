@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 5379845322996142816}
   m_Layer: 13
   m_Name: Barrier
-  m_TagString: Barrier
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1216,6 +1216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3b83ebc33c39c4badd8dd63b6d2682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Shooter: {fileID: 5379845321706678833}
+  Mover: {fileID: 5379845323078689318}
+  Barrier: {fileID: 5379845322996142830}
+  cooldown: 0
 --- !u!1 &6805164419803458448
 GameObject:
   m_ObjectHideFlags: 0
