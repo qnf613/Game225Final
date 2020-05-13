@@ -540,7 +540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5379845321955983617}
   m_LocalRotation: {x: 1.776357e-15, y: 0.000000029676281, z: -3.158463e-23, w: 1}
-  m_LocalPosition: {x: -0.0000013087814, y: 0.0000002384186, z: -10}
+  m_LocalPosition: {x: -0.0000010703628, y: 1.1999998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5379845322747362004}
@@ -609,7 +609,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5379845322137304706}
   m_LocalRotation: {x: 1.776357e-15, y: 0.000000029676281, z: -3.158463e-23, w: 1}
-  m_LocalPosition: {x: -0.0000013087814, y: 0.0000002384186, z: -10}
+  m_LocalPosition: {x: -0.0000010703628, y: 1.1999998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5379845322381804005}
@@ -925,16 +925,16 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenY: 0.6
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.2
-  m_DeadZoneHeight: 0.2
+  m_DeadZoneHeight: 0.35
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
-  m_BiasY: 0
+  m_BiasY: -0.24000001
   m_CenterOnActivate: 1
   m_GroupFramingMode: 2
   m_AdjustmentMode: 0
@@ -1161,8 +1161,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -410, y: -180}
-  m_SizeDelta: {x: 571.8, y: 80.3}
+  m_AnchoredPosition: {x: -456.4, y: -185}
+  m_SizeDelta: {x: 479.2, y: 80.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5379845323578397166
 CanvasRenderer:
@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf0f3a1c9e3362468975ce8606dcfe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentScene: 
+  CurrentScene: Tutorial
 --- !u!1 &8506018455419051598
 GameObject:
   m_ObjectHideFlags: 0

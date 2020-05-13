@@ -5,12 +5,14 @@ using UnityEngine;
 public class Ability3 : MonoBehaviour
 {
     [SerializeField] private float cooltime;
-    private float curtime;
+        //this will count in playercontroller script due to UI display
+    public static float curtime3;
     private float duration;
     private float maxDuration = 3.0f;
     private bool isUsing = false;
     SpriteRenderer spriterenderer;
     GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,7 @@ public class Ability3 : MonoBehaviour
     {
         //active condition
         //TODO: SE
-        if (Input.GetMouseButton(0) && curtime < 0f)
+        if (Input.GetMouseButton(0) && curtime3 < 0f)
         {
             //duration check
             isUsing = true;
@@ -40,7 +42,7 @@ public class Ability3 : MonoBehaviour
                 isUsing = false;
                 player.layer = 13;
                 this.GetComponent<SpriteRenderer>().enabled = false;
-                curtime = cooltime;
+                curtime3 = cooltime;
             }
             
         }
@@ -53,13 +55,13 @@ public class Ability3 : MonoBehaviour
             //cooldown reduce
             if (!isUsing && duration < maxDuration)
             {
-                curtime = cooltime;
-                curtime -= (maxDuration - duration);
+                curtime3 = cooltime;
+                curtime3 -= (maxDuration - duration);
             }
             duration = 0.0f;
         }
 
-        curtime -= Time.deltaTime;
+        curtime3 -= Time.deltaTime;
 
     }
 

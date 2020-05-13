@@ -14,7 +14,8 @@ public class Ability2 : MonoBehaviour
     [SerializeField] private float movingSpeed = 15.0f;
     //using condition related
     [SerializeField]private float cooltime;
-    private float curtime = 0f;
+        //this will count in playercontroller script due to UI display
+    public static float curtime2;
     private float duration = 0f;
     [SerializeField]private float maxDuration;
     private bool isUsing = false;
@@ -27,14 +28,12 @@ public class Ability2 : MonoBehaviour
         movingObject = null;
         player = GameObject.Find("Player");
         playerRigid = player.GetComponent<Rigidbody2D>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
         targetPos = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        
         //activate conditions
         //TODO: SE
         if (Input.GetMouseButtonDown(0) && !isUsing)
@@ -43,7 +42,7 @@ public class Ability2 : MonoBehaviour
         }
 
         //check duration and
-        else if (Input.GetMouseButton(0) && curtime < 0f && movingObject != null)
+        else if (Input.GetMouseButton(0) && curtime2 < 0f && movingObject != null)
         {
             //trigger physics engine movement
             btPressed = true;
@@ -66,7 +65,7 @@ public class Ability2 : MonoBehaviour
             btPressed = false;
         }
 
-        curtime -= Time.deltaTime;
+        curtime2 -= Time.deltaTime;
 
     }
 
@@ -112,7 +111,7 @@ public class Ability2 : MonoBehaviour
     {
         duration = 0.0f;
         isUsing = false;
-        curtime = cooltime;
+        curtime2 = cooltime;
     }
 
 }

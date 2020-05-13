@@ -6,7 +6,8 @@ public class Ability1 : MonoBehaviour
 {
 
     [SerializeField] private float cooltime;
-    private float curtime;
+        //this will count in playercontroller script due to UI display
+    public static float curtime1;
     private bool usable = false;
     //projectile
     public GameObject bullet;
@@ -15,10 +16,10 @@ public class Ability1 : MonoBehaviour
     //laser point related
     [SerializeField] private float length;
     private LineRenderer render;
+
     void Start()
     {
         render = GetComponent<LineRenderer>();
-
     }
 
     void Update()
@@ -32,15 +33,16 @@ public class Ability1 : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Instantiate(bullet, pos.position, transform.rotation);
-                curtime = cooltime;
+                curtime1 = cooltime;
                 usable = false;
             }
         }
-        if (curtime <= 0f)
+
+        if (curtime1 <= 0f)
         {
             usable = true;
         }
-        curtime -= Time.deltaTime;
+
 
     }
 

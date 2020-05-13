@@ -67,19 +67,24 @@ public class PlayerController : MonoBehaviour
             }
             jumpcount++;
         }
+
         
+        //these are logic of abilities' cool-down but written here for UI displaying.
+        Ability1.curtime1 -= Time.deltaTime;
+        Ability2.curtime2 -= Time.deltaTime;
+        Ability3.curtime3 -= Time.deltaTime;
         //changing abilities
-        //if player doesn't hav any new abilities, switch doesn't work
+        //if player doesn't hav abilities but shooter, switch doesn't work
+
         if (Input.GetKeyDown(KeyCode.E) && maxAbility > 1)
         {
             abSwitch++;
         }
-
+        
         if (abSwitch == 1)
         {
            Shooter.SetActive(true);
            CurrentAb = "Shooter";
-           
         }
 
         if (abSwitch == 2)
@@ -89,6 +94,7 @@ public class PlayerController : MonoBehaviour
             CurrentAb = "Mover";
             
         }
+
         if (abSwitch == 3)
         {
             Mover.SetActive(false);

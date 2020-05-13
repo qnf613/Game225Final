@@ -11,15 +11,14 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject target;
     [SerializeField] private int HP;
 
-    public int nextMove;
+    private int nextMove;
 
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         //anima = GetComponent<Animator>();
-        //call Direction() since this object has been appeared
-        Invoke("Direction", 0);
+        StartCoroutine("ChangeMovement");
     }
 
     // Update is called once per frame
@@ -49,22 +48,22 @@ public class Enemy : MonoBehaviour
 
     }
 
-    //deciding direction
-    void Direction()
+    //decide direction to go
+    IEnumerator ChangeMovement()
     {
-        //decide left, stop, right
+        //decide left -1, stop 0, right 1
         nextMove = Random.Range(-1, 2);
-        //flip the sprites when it facing right side
+        ////flip the sprites when it facing right side
         //if (nextMove != 0)
         //{
         //    spriteRenderer.flipX = nextMove == 1;
         //}
         //makes the enemy's direction deciding more randomly
         float nextDirectionTime = Random.Range(2f, 4f);
+        yield return new WaitForSeconds(nextDirectionTime);
         //repeat this method itself
-        Invoke("Direction", nextDirectionTime);
+        StartCoroutine("ChangeMovement");
     }
-    
 
     public void OnTriggerEnter2D(Collider2D collider)
     {

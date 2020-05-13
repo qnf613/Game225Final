@@ -9,7 +9,6 @@ TagManager:
   - ShootableOb
   - Enemy
   - Projectile
-  - Barrier
   - NP.Projectile
   - GetMover
   - GetBarrier
