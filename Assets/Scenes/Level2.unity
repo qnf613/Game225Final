@@ -48545,6 +48545,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 923318730900389567, guid: 865e2577479238f4d89d211b67356f97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 923318730922089497, guid: 865e2577479238f4d89d211b67356f97,
         type: 3}
       propertyPath: m_LocalPosition.x
