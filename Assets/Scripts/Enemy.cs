@@ -5,13 +5,21 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     //TODO:apply animation
+    //components
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anima;
     [SerializeField] GameObject target;
+    [SerializeField] GameObject bullet;
     [SerializeField] private int HP;
+    //enemy variation - chaser
     [SerializeField] private bool playerChaser = false;
     [SerializeField] private bool isChasing;
+    //enemy variation - spitter
+    [SerializeField] private bool Spitter = false;
+    [SerializeField] private bool isLockingOn;
+    [SerializeField] private float curtime;
+    [SerializeField] private float cooltime;
     private int nextMove;
 
     private void Start()
@@ -20,6 +28,7 @@ public class Enemy : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         //anima = GetComponent<Animator>();
         StartCoroutine("ChangeMovement");
+        
     }
 
     // Update is called once per frame
@@ -30,11 +39,17 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        curtime -= Time.deltaTime;
     }
 
     private void FixedUpdate()
     {
         Move();
+        if (isLockingOn)
+        {
+            Spit();
+        }
     }
 
     private void Move()
@@ -61,6 +76,7 @@ public class Enemy : MonoBehaviour
                 nextMove = 1;
             }
         }
+
         else
         {
             if (nextMove == -1)
@@ -73,6 +89,16 @@ public class Enemy : MonoBehaviour
             }
         }
 
+    }
+
+    private void Spit()
+    {
+    //    transform.rotation = new Vector2(target.)
+        if (curtime <= 0)
+        {
+            Instantiate(bullet, transform.position, transform.rotation);
+            curtime = cooltime;
+        }
     }
 
 
@@ -105,19 +131,26 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D trigger)
     {
-        //target player
+        //target player - chaser
         if (trigger.gameObject.CompareTag("Player") && playerChaser)
         {
             target = trigger.gameObject;
             isChasing = true;
             StopCoroutine("ChangeMovement");
         }
+        //target player - spitter
+        if (trigger.gameObject.CompareTag("Player") && Spitter)
+        {
+            target = trigger.gameObject;
+            isLockingOn = true;
+            StopCoroutine("ChangeMovement");
+        }
     }
 
     private void OnTriggeStay2D(Collider2D trigger)
     {
-        //chasing player
-        if (trigger.gameObject.CompareTag("Player") && playerChaser)
+        //chasing or lock on player
+        if (trigger.gameObject.CompareTag("Player") && (playerChaser || Spitter))
         {
             StopCoroutine("ChangeMovement");
         }
@@ -129,6 +162,12 @@ public class Enemy : MonoBehaviour
         if (trigger.gameObject.CompareTag("Player") && playerChaser)
         {
             isChasing = false;
+            StartCoroutine("ChangeMovement");
+        }
+        //stop lock on
+        if (trigger.gameObject.CompareTag("Player") && Spitter)
+        {
+            isLockingOn = false;
             StartCoroutine("ChangeMovement");
         }
     }
