@@ -10,17 +10,17 @@ public class Enemy : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator anima;
     [SerializeField] GameObject target;
-    [SerializeField] GameObject bullet;
     [SerializeField] private int HP;
+    private int nextMove;
     //enemy variation - chaser
     [SerializeField] private bool playerChaser = false;
     [SerializeField] private bool isChasing;
-    //enemy variation - spitter
-    [SerializeField] private bool Spitter = false;
-    [SerializeField] private bool isLockingOn;
-    [SerializeField] private float curtime;
-    [SerializeField] private float cooltime;
-    private int nextMove;
+    //enemy variation - spitter *this variation will not be included in final project submission version
+    //[SerializeField] GameObject bullet;
+    //[SerializeField] private bool Spitter = false;
+    //[SerializeField] private bool isLockingOn;
+    //[SerializeField] private float curtime;
+    //[SerializeField] private float cooltime;
 
     private void Start()
     {
@@ -40,16 +40,16 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
 
-        curtime -= Time.deltaTime;
+        //curtime -= Time.deltaTime;
     }
 
     private void FixedUpdate()
     {
         Move();
-        if (isLockingOn)
-        {
-            Spit();
-        }
+        //if (isLockingOn)
+        //{
+        //    Spit();
+        //}
     }
 
     private void Move()
@@ -93,12 +93,12 @@ public class Enemy : MonoBehaviour
 
     private void Spit()
     {
-    //    transform.rotation = new Vector2(target.)
-        if (curtime <= 0)
-        {
-            Instantiate(bullet, transform.position, transform.rotation);
-            curtime = cooltime;
-        }
+        //transform.rotation = new Vector2(target.)
+        //if (curtime <= 0)
+        //{
+        //    Instantiate(bullet, transform.position, transform.rotation);
+        //    curtime = cooltime;
+        //}
     }
 
 
@@ -139,18 +139,18 @@ public class Enemy : MonoBehaviour
             StopCoroutine("ChangeMovement");
         }
         //target player - spitter
-        if (trigger.gameObject.CompareTag("Player") && Spitter)
-        {
-            target = trigger.gameObject;
-            isLockingOn = true;
-            StopCoroutine("ChangeMovement");
-        }
+        //if (trigger.gameObject.CompareTag("Player") && Spitter)
+        //{
+        //    target = trigger.gameObject;
+        //    isLockingOn = true;
+        //    StopCoroutine("ChangeMovement");
+        //}
     }
 
     private void OnTriggeStay2D(Collider2D trigger)
     {
         //chasing or lock on player
-        if (trigger.gameObject.CompareTag("Player") && (playerChaser || Spitter))
+        if (trigger.gameObject.CompareTag("Player") && playerChaser)
         {
             StopCoroutine("ChangeMovement");
         }
@@ -165,10 +165,10 @@ public class Enemy : MonoBehaviour
             StartCoroutine("ChangeMovement");
         }
         //stop lock on
-        if (trigger.gameObject.CompareTag("Player") && Spitter)
-        {
-            isLockingOn = false;
-            StartCoroutine("ChangeMovement");
-        }
+        //if (trigger.gameObject.CompareTag("Player") && Spitter)
+        //{
+        //    isLockingOn = false;
+        //    StartCoroutine("ChangeMovement");
+        //}
     }
 }
