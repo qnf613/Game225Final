@@ -148,15 +148,12 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
 
+        
     }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //being damaged
-        if (collision.CompareTag("Enemy") || collision.CompareTag("NP.Projectile"))
-        {
-            Damaged();
-        }
         //get new abilities
         if (collision.CompareTag("GetMover"))
         {
@@ -178,6 +175,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        //being damaged
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("NP.Projectile"))
+        {
+            Damaged();
+        }
+
         //re-set jump count
         if (collision.gameObject.tag == "Ground")
         {
@@ -185,6 +188,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
 
     public void OnCollisionExit2D(Collision2D collision)
     {

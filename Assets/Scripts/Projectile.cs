@@ -25,9 +25,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //pass the trigger of player and enemy
         if (collision.gameObject)
         {
-            if (!collision.CompareTag("Player"))
+            if (!(collision.CompareTag("Player") || collision.CompareTag("Enemy")))
             {
                 Destroy(gameObject);
             }
@@ -35,6 +36,16 @@ public class Projectile : MonoBehaviour
         if (collision.CompareTag("ShootableOb"))
         {
             Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //if it hits enemy's collider (not trigger) projectile will destroy
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
             Destroy(gameObject);
         }
     }

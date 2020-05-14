@@ -10,7 +10,8 @@ public class Enemy : MonoBehaviour
     Animator anima;
     [SerializeField] GameObject target;
     [SerializeField] private int HP;
-
+    [SerializeField] private bool playerChaser = false;
+    [SerializeField] private bool isChasing;
     private int nextMove;
 
     void Start()
@@ -24,6 +25,20 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        //Death & destory
+        if(HP <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void FixedUpdate()
+    {
+        Move();
+    }
+
+    public void Move()
+    {
         //moving && animations
         rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
         //if (rigid.velocity.normalized.x != 0)
@@ -34,19 +49,32 @@ public class Enemy : MonoBehaviour
         //{
         //    anima.SetBool("isWalking", false);
         //}
-        //Death & destory
-        if(HP <= 0)
+        if (isChasing)
         {
-            Destroy(gameObject);
+            Vector3 targetPos = target.transform.position;
+            if (targetPos.x < transform.position.x)
+            {
+                nextMove = -1;
+            }
+            else if (targetPos.x > transform.position.x)
+            {
+                nextMove = 1;
+            }
+        }
+        else
+        {
+            if (nextMove == -1)
+            {
+                nextMove = -1;
+            }
+            else if (nextMove == 1)
+            {
+                nextMove = 1;
+            }
         }
 
-
     }
 
-    public void FixedUpdate()
-    {
-
-    }
 
     //decide direction to go
     IEnumerator ChangeMovement()
@@ -65,12 +93,43 @@ public class Enemy : MonoBehaviour
         StartCoroutine("ChangeMovement");
     }
 
-    public void OnTriggerEnter2D(Collider2D collider)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         //damaged by bullet
-        if (collider.CompareTag("Projectile"))
+        if (collision.gameObject.CompareTag("Projectile"))
         {
             HP = HP - 3;
+        }
+    }
+
+
+    public void OnTriggerEnter2D(Collider2D trigger)
+    {
+        //target player
+        if (trigger.gameObject.CompareTag("Player") && playerChaser)
+        {
+            target = trigger.gameObject;
+            isChasing = true;
+            StopCoroutine("ChangeMovement");
+        }
+    }
+
+    public void OnTriggeStay2D(Collider2D trigger)
+    {
+        //chasing player
+        if (trigger.gameObject.CompareTag("Player") && playerChaser)
+        {
+            StopCoroutine("ChangeMovement");
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D trigger)
+    {
+        //stop chasing
+        if (trigger.gameObject.CompareTag("Player") && playerChaser)
+        {
+            isChasing = false;
+            StartCoroutine("ChangeMovement");
         }
     }
 }
