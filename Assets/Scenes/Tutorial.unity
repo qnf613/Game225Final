@@ -133,6 +133,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5201408427142348726, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1971572200}
+    - target: {fileID: 5201408427142348726, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: backToMain
+      objectReference: {fileID: 0}
     - target: {fileID: 5379845321917943698, guid: 92b96284a59227440a1ab0c849de8eea,
         type: 3}
       propertyPath: m_Name
@@ -192,6 +202,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379845322381804005, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379845323078689368, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: movingSpeed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379845323578397163, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -399.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379845323578397163, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -191.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379845323578397163, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025621439684024813, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025621439684024813, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025621439684024813, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6706790380089526854, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6706790380089526854, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -166
+      objectReference: {fileID: 0}
+    - target: {fileID: 6706790380089526854, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92b96284a59227440a1ab0c849de8eea, type: 3}
@@ -264,7 +329,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Press E again to select Mover. You can move some objects by dragging them
-    for 5 seconds. While you moving something, you can't move yourself
+    up to 3 seconds. While you moving something, you can't move yourself
 --- !u!222 &595466491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -341,8 +406,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: After you release an object or 5 seconds of moving, you need 3 seconds of
-    cool down. You can change current ability by Press E.
+  m_Text: After you release an object or end of duration, you need 3 seconds of cool
+    down. You can change current ability by Press E.
 --- !u!222 &661411545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -473,7 +538,7 @@ Transform:
   - {fileID: 1143797842}
   - {fileID: 306216665491810013}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &842144596
 GameObject:
@@ -847,12 +912,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086613112}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1143797842 stripped
 Transform:
@@ -1165,6 +1230,18 @@ Transform:
   m_Father: {fileID: 814441654}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1971572200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7625669947034058310, guid: 92b96284a59227440a1ab0c849de8eea,
+    type: 3}
+  m_PrefabInstance: {fileID: 379802443}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf0f3a1c9e3362468975ce8606dcfe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &306216665491810013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4211523875137012076, guid: 0c7552654b4272c4293f0b477228bb29,

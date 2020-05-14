@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private bool isContacted = false;
     //ability control
     //default ability setup
-    private int abSwitch = 1;
+    public static int abSwitch = 1;
     private int maxAbility = 1;
     [SerializeField] private GameObject Shooter;
     //ability that need to be accquired
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
             Barrier.SetActive(false);
             Freezer.SetActive(true);
             CurrentAb = "Freezer";
-            //check if player doesnt hav barrier yet, if so turn on shooter, not freezer
+            //check if player doesnt hav freezer yet, if so turn on shooter, not freezer
             if (maxAbility < 4)
             {
                 Freezer.SetActive(false);
