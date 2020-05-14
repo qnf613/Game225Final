@@ -5,27 +5,30 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float repeat;
+    [SerializeField] private float duration;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        Invoke("Destroy", repeat);
+        //destroy projectile after certain amount of time
+        Invoke("Destroy", duration);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        //move logic
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 
-    void Destroy()
+    //destroy
+    private void Destroy()
     {
         Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //pass the trigger of player and enemy
+        //ignore the triggers of player and enemy
         if (collision.gameObject)
         {
             if (!(collision.CompareTag("Player") || collision.CompareTag("Enemy")))
@@ -33,6 +36,7 @@ public class Projectile : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        //trigger the interaction with shootable objects
         if (collision.CompareTag("ShootableOb"))
         {
             Destroy(collision.gameObject);

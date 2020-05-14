@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private bool isChasing;
     private int nextMove;
 
-    void Start()
+    private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    private void Update()
     {
         //Death & destory
         if(HP <= 0)
@@ -32,12 +32,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void FixedUpdate()
+    private void FixedUpdate()
     {
         Move();
     }
 
-    public void Move()
+    private void Move()
     {
         //moving && animations
         rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
@@ -93,7 +93,7 @@ public class Enemy : MonoBehaviour
         StartCoroutine("ChangeMovement");
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         //damaged by bullet
         if (collision.gameObject.CompareTag("Projectile"))
@@ -103,7 +103,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-    public void OnTriggerEnter2D(Collider2D trigger)
+    private void OnTriggerEnter2D(Collider2D trigger)
     {
         //target player
         if (trigger.gameObject.CompareTag("Player") && playerChaser)
@@ -114,7 +114,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void OnTriggeStay2D(Collider2D trigger)
+    private void OnTriggeStay2D(Collider2D trigger)
     {
         //chasing player
         if (trigger.gameObject.CompareTag("Player") && playerChaser)
@@ -123,7 +123,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void OnTriggerExit2D(Collider2D trigger)
+    private void OnTriggerExit2D(Collider2D trigger)
     {
         //stop chasing
         if (trigger.gameObject.CompareTag("Player") && playerChaser)

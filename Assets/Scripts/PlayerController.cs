@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private int jumpcount = 0;
-    [SerializeField] public static int HP;
-    [SerializeField] public static string CurrentAb = "Shooter";
+    public static int HP; //all static variables are called at UIUpdate
+    public static string CurrentAb = "Shooter";
     private bool isContacted = false;
     //ability control
     //default ability setup
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
         //changing abilities
         //if player doesn't hav abilities but shooter, switch doesn't work
 
-        if (Input.GetKeyDown(KeyCode.E) && maxAbility > 1)
+        if (Input.GetKeyDown(KeyCode.E) && maxAbility > 1 && !Input.GetMouseButton(0))
         {
             abSwitch++;
         }
@@ -106,9 +106,8 @@ public class PlayerController : MonoBehaviour
                 abSwitch = 1;
                 Barrier.SetActive(false);
             }
-
-
         }
+
         if (abSwitch == 4)
         {
             Barrier.SetActive(false);
@@ -173,14 +172,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         //being damaged
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("NP.Projectile"))
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Obstacle")
+            || collision.gameObject.CompareTag("NP.Projectile"))
         {
             Damaged();
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         //re-set jump count
         if (collision.gameObject.tag == "Ground")
         {
@@ -190,7 +194,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground" && jumpcount == 0)
         {

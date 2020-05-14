@@ -14,16 +14,15 @@ public class Ability2 : MonoBehaviour
     [SerializeField] private float movingSpeed = 15.0f;
     //using condition related
     [SerializeField]private float cooltime;
-        //this will count in playercontroller script due to UI display
-    public static float curtime2;
-    private float duration = 0f;
+    public static float curtime2; //this will count in playercontroller script due to UI display 
+    public static float duration = 0;
     [SerializeField]private float maxDuration;
     private bool isUsing = false;
     //for fixed update
     private bool btPressed = false;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         movingObject = null;
         player = GameObject.Find("Player");
@@ -31,7 +30,7 @@ public class Ability2 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         targetPos = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         //activate conditions
@@ -42,7 +41,7 @@ public class Ability2 : MonoBehaviour
         }
 
         //check duration and
-        else if (Input.GetMouseButton(0) && curtime2 < 0f && movingObject != null)
+        else if (Input.GetMouseButton(0) && curtime2 < 0f && movingObject != null && PlayerController.abSwitch == 2)
         {
             //trigger physics engine movement
             btPressed = true;
@@ -67,7 +66,7 @@ public class Ability2 : MonoBehaviour
 
     }
 
-    public void FixedUpdate()
+    private void FixedUpdate()
     {
         //moveing objects
         if (btPressed)
@@ -82,7 +81,7 @@ public class Ability2 : MonoBehaviour
     }
 
 
-    public void ObjDetect()
+    private void ObjDetect()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
@@ -99,13 +98,13 @@ public class Ability2 : MonoBehaviour
         }
     }
 
-    public void Move(Vector2 direction)
+    private void Move(Vector2 direction)
     {
         objRigid.MovePosition((Vector2)movingObject.transform.position + (direction * movingSpeed * Time.deltaTime));
     }
 
 
-    public void Release()
+    private void Release()
     {
         duration = 0.0f;
         isUsing = false;

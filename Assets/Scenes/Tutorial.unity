@@ -203,6 +203,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5379845321955983618, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000010703628
+      objectReference: {fileID: 0}
+    - target: {fileID: 5379845322137304709, guid: 92b96284a59227440a1ab0c849de8eea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000010703628
+      objectReference: {fileID: 0}
     - target: {fileID: 5379845322381804005, guid: 92b96284a59227440a1ab0c849de8eea,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -513,7 +523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814441654}
   m_Layer: 0
-  m_Name: AllofTemObjects
+  m_Name: Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -723,7 +733,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961889597}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00000017791}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000002784}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1467563921}
@@ -731,8 +741,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1819, y: 104.22}
-  m_SizeDelta: {x: 350.9, y: 174.05}
+  m_AnchoredPosition: {x: 1866, y: 119.35}
+  m_SizeDelta: {x: 350.9, y: 204.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961889599
 MonoBehaviour:
@@ -767,7 +777,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: The third ability is a barrier. While pressing the left click for up to
     3 seconds, the barrier will block incoming projectiles, and also you can pass
-    the enemy without damage taken.
+    the enemy & obstaclewithout damage taken.
 --- !u!222 &961889600
 CanvasRenderer:
   m_ObjectHideFlags: 0

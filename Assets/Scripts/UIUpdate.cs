@@ -8,14 +8,15 @@ public class UIUpdate : MonoBehaviour
     Text UI;
     [SerializeField] private float cooldown;
     [SerializeField] private float displayingCD;
+    [SerializeField] private float duration;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         UI = GetComponent<Text>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (PlayerController.abSwitch == 1)
         {
@@ -27,12 +28,15 @@ public class UIUpdate : MonoBehaviour
         {
             cooldown = Ability2.curtime2;
             displayingCD = cooldown;
+            duration = Ability2.duration;
         }
 
         else if (PlayerController.abSwitch == 3)
         {
             cooldown = Ability3.curtime3;
             displayingCD = cooldown;
+            duration = Ability3.duration;
+            
         }
 
         if (displayingCD <= 0)
@@ -40,6 +44,7 @@ public class UIUpdate : MonoBehaviour
             displayingCD = 0;
         }
 
-        UI.text = "HP: " + PlayerController.HP.ToString() + "\nCurrent Ability: " + PlayerController.CurrentAb + " Cooldown: " + displayingCD.ToString("F2");
+        UI.text = "HP: " + PlayerController.HP.ToString() + " | Current Ability: " + PlayerController.CurrentAb + 
+            "\nDuration: " + duration.ToString("F2") + " | Cooldown: " + displayingCD.ToString("F2");
     }
 }

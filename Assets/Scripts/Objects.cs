@@ -8,24 +8,15 @@ public class Objects : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
-    void Start()
+    private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
+    
 
-    void Update()
-    {
-        
-        
-    }
-
-    void FixedUpdate()
-    {
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
@@ -33,11 +24,6 @@ public class Objects : MonoBehaviour
         }
         
     }
-
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        
-    }
-
+    
 
 }

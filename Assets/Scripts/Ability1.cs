@@ -6,8 +6,7 @@ public class Ability1 : MonoBehaviour
 {
 
     [SerializeField] private float cooltime;
-        //this will count in playercontroller script due to UI display
-    public static float curtime1;
+    public static float curtime1; //this will count in playercontroller script due to UI display  
     private bool usable = false;
     //projectile
     public GameObject bullet;
@@ -17,12 +16,12 @@ public class Ability1 : MonoBehaviour
     [SerializeField] private float length;
     private LineRenderer render;
 
-    void Start()
+    private void Start()
     {
         render = GetComponent<LineRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
         LookMouse();
         LaserPoint();
@@ -46,7 +45,7 @@ public class Ability1 : MonoBehaviour
 
     }
 
-    void LookMouse()
+    private void LookMouse()
     {
         //get target (mouse cursor) position
         Vector2 targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -54,7 +53,7 @@ public class Ability1 : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, z);
     }
 
-    void LaserPoint()
+    private void LaserPoint()
     {
         Vector3 endPos = transform.position + (transform.right * length);
         render.SetPositions(new Vector3[] { transform.position, endPos });

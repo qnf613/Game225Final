@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Ability3 : MonoBehaviour
 {
-    [SerializeField] private float cooltime;
-        //this will count in playercontroller script due to UI display
-    public static float curtime3;
-    private float duration;
-    private float maxDuration = 3.0f;
-    private bool isUsing = false;
+    //component
     SpriteRenderer spriterenderer;
     GameObject player;
+    [SerializeField] private float cooltime;
+    public static float curtime3; //this will count in playercontroller script due to UI display 
+    public static float duration = 0;
+    private float maxDuration = 3.0f;
+    private bool isUsing = false;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         player = GameObject.Find("Player");
         spriterenderer = GetComponent<SpriteRenderer>();
@@ -22,7 +22,7 @@ public class Ability3 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //active condition
         //TODO: SE
@@ -64,8 +64,8 @@ public class Ability3 : MonoBehaviour
         curtime3 -= Time.deltaTime;
 
     }
-
-    void OnTriggerEnter2D(Collider2D collision)
+    //blocks projectiles that are not player's
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isUsing && collision.CompareTag("Projectile"))
         {
@@ -73,10 +73,10 @@ public class Ability3 : MonoBehaviour
         }
         
     }
-
-    void OnTriggerStay2D(Collider2D collision)
+    //ignore contact with enemies & obstacle
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (isUsing && collision.CompareTag("Enemy"))
+        if (isUsing && (collision.CompareTag("Enemy") || collision.gameObject.CompareTag("Obstacle")))
         {
             player.layer = 14;
         }

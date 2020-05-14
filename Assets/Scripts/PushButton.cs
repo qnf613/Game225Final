@@ -5,21 +5,18 @@ using UnityEngine;
 public class PushButton : MonoBehaviour
 {
     [SerializeField] private GameObject thingsToShow;
+    [SerializeField] private string thingToReact;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        //disables the game object that will appear when button pushed
         thingsToShow.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
-
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("MovableOb"))
+        //enable the game object that will appear when button pushed
+        if (collision.gameObject.CompareTag(thingToReact))
         {
             thingsToShow.SetActive(true);
             Destroy(gameObject);
