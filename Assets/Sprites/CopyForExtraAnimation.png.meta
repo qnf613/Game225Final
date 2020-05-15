@@ -1,148 +1,148 @@
 fileFormatVersion: 2
-guid: 935a63b45affe544cb90dae7a5a7c434
+guid: 8b66c147a82f91140b3341c8ed84f849
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5050799044096650240
-    second: byGoldMetal_0
+      213: 3011417286843297663
+    second: Unity_Total 1_0
   - first:
-      213: -5365916081699573742
-    second: byGoldMetal_1
+      213: 5082857902887835146
+    second: Unity_Total 1_1
   - first:
-      213: -3916183670007848744
-    second: byGoldMetal_2
+      213: 5426233069968633707
+    second: Unity_Total 1_2
   - first:
-      213: 5425857887288675639
-    second: byGoldMetal_3
+      213: -2884748048744382426
+    second: Unity_Total 1_3
   - first:
-      213: -7005091877032163258
-    second: byGoldMetal_4
+      213: 868172746669654078
+    second: Unity_Total 1_4
   - first:
-      213: 9185193598801911995
-    second: byGoldMetal_5
+      213: -8645727870693508996
+    second: Unity_Total 1_5
   - first:
-      213: 3107696228168304465
-    second: byGoldMetal_6
+      213: 3750247430753468565
+    second: Unity_Total 1_6
   - first:
-      213: -7658797541089580615
-    second: byGoldMetal_7
+      213: -9146799943763225791
+    second: Unity_Total 1_7
   - first:
-      213: 6606969042926007223
-    second: byGoldMetal_8
+      213: 6455187086793116428
+    second: Unity_Total 1_8
   - first:
-      213: -6704307026658931648
-    second: byGoldMetal_9
+      213: -1754995269738613873
+    second: Unity_Total 1_9
   - first:
-      213: 703034217862325858
-    second: byGoldMetal_10
+      213: 3514616007233692715
+    second: Unity_Total 1_10
   - first:
-      213: 8274781135772396960
-    second: byGoldMetal_11
+      213: -8621311656029419490
+    second: Unity_Total 1_11
   - first:
-      213: -4414332706649173197
-    second: byGoldMetal_12
+      213: -6505055234290768160
+    second: Unity_Total 1_12
   - first:
-      213: -1483939482431683036
-    second: byGoldMetal_13
+      213: -3317468835217796
+    second: Unity_Total 1_13
   - first:
-      213: -5680049090636905295
-    second: byGoldMetal_14
+      213: -8895168580795560318
+    second: Unity_Total 1_14
   - first:
-      213: 9002462068862205402
-    second: byGoldMetal_15
+      213: 405324893867456809
+    second: Unity_Total 1_15
   - first:
-      213: -7155799823189087263
-    second: byGoldMetal_16
+      213: 837601923436322745
+    second: Unity_Total 1_16
   - first:
-      213: 6774883226420319184
-    second: byGoldMetal_17
+      213: 3558180485106525174
+    second: Unity_Total 1_17
   - first:
-      213: -6834728901382564397
-    second: byGoldMetal_18
+      213: -4768996480054295583
+    second: Unity_Total 1_18
   - first:
-      213: -14168195098142594
-    second: byGoldMetal_19
+      213: -2082011617456459708
+    second: Unity_Total 1_19
   - first:
-      213: 1760678286987067954
-    second: byGoldMetal_20
+      213: 113966138356048766
+    second: Unity_Total 1_20
   - first:
-      213: 4654880880817408608
-    second: byGoldMetal_21
+      213: 2268411871607274132
+    second: Unity_Total 1_21
   - first:
-      213: 4496558758584660778
-    second: byGoldMetal_22
+      213: 7064137384494111809
+    second: Unity_Total 1_22
   - first:
-      213: -6363282512455578156
-    second: byGoldMetal_23
+      213: 8309575558689715239
+    second: Unity_Total 1_23
   - first:
-      213: 4033245526651492944
-    second: byGoldMetal_24
+      213: 8658453510336664214
+    second: Unity_Total 1_24
   - first:
-      213: 8116867254835520128
-    second: byGoldMetal_25
+      213: -5533479937935526174
+    second: Unity_Total 1_25
   - first:
-      213: 3187604039473501465
-    second: byGoldMetal_26
+      213: -5265222838787742052
+    second: Unity_Total 1_26
   - first:
-      213: 5780382313153524604
-    second: byGoldMetal_27
+      213: -2599892676224176051
+    second: Unity_Total 1_27
   - first:
-      213: -5939969182554205122
-    second: byGoldMetal_28
+      213: 5773831664765567725
+    second: Unity_Total 1_28
   - first:
-      213: -8200304292230919726
-    second: byGoldMetal_29
+      213: 2715077692214912241
+    second: Unity_Total 1_29
   - first:
-      213: 96859120212763493
-    second: byGoldMetal_30
+      213: -206391823286306075
+    second: Unity_Total 1_30
   - first:
-      213: -6325355327416373034
-    second: byGoldMetal_31
+      213: 5757574347545907870
+    second: Unity_Total 1_31
   - first:
-      213: 6261157910873503354
-    second: byGoldMetal_32
+      213: -3336539827885329028
+    second: Unity_Total 1_32
   - first:
-      213: -5078997024141043720
-    second: byGoldMetal_33
+      213: 2484041194361792321
+    second: Unity_Total 1_33
   - first:
-      213: 8686088373614142292
-    second: byGoldMetal_34
+      213: -4309020985544506223
+    second: Unity_Total 1_34
   - first:
-      213: -303249146802058812
-    second: byGoldMetal_35
+      213: -9193216844534297930
+    second: Unity_Total 1_35
   - first:
-      213: 5824027634211521851
-    second: byGoldMetal_36
+      213: 3903944991481257659
+    second: Unity_Total 1_36
   - first:
-      213: -3900523505314193648
-    second: byGoldMetal_37
+      213: -4603680285816450908
+    second: Unity_Total 1_37
   - first:
-      213: -8115532553493304831
-    second: byGoldMetal_38
+      213: 8322486072795411976
+    second: Unity_Total 1_38
   - first:
-      213: -6172563047141950411
-    second: byGoldMetal_39
+      213: -8208268641973506167
+    second: Unity_Total 1_39
   - first:
-      213: 3277183234850852159
-    second: byGoldMetal_40
+      213: -5195660533954261928
+    second: Unity_Total 1_40
   - first:
-      213: -8707768925722822036
-    second: byGoldMetal_41
+      213: 6839612023988084378
+    second: Unity_Total 1_41
   - first:
-      213: 8641032650907249622
-    second: byGoldMetal_42
+      213: 7741184795697827516
+    second: Unity_Total 1_42
   - first:
-      213: -8881291844331521540
-    second: byGoldMetal_43
+      213: 8705693326151907742
+    second: Unity_Total 1_43
   - first:
-      213: 3005166368454549941
-    second: byGoldMetal_44
+      213: -2443061290372253399
+    second: Unity_Total 1_44
   - first:
-      213: 2928739609888741946
-    second: byGoldMetal_45
+      213: 2260679485819658291
+    second: Unity_Total 1_45
   - first:
-      213: 7106280103124522841
-    second: byGoldMetal_46
+      213: 6858994807579401917
+    second: Unity_Total 1_46
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -224,6 +224,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -239,7 +251,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: byGoldMetal_0
+      name: Unity_Total 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -247,20 +259,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ecef2e99acfe694fbdaf8fa333f3791
-      internalID: 5050799044096650240
+      spriteID: d283bdfa834b64441bc9708815ac86bf
+      internalID: 3011417286843297663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_1
+      name: Unity_Total 1_1
       rect:
         serializedVersion: 2
         x: 17
@@ -268,20 +280,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 725f38e5d86b71347b2fed7f1d2cc408
-      internalID: -5365916081699573742
+      spriteID: e978897a79d5ccc4ab07a58ae5d57d90
+      internalID: 5082857902887835146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_2
+      name: Unity_Total 1_2
       rect:
         serializedVersion: 2
         x: 34
@@ -289,20 +301,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 718462e5d6d63fd45a9768bfbbc2b551
-      internalID: -3916183670007848744
+      spriteID: 72473c6f9be08db4fafa42efb299f7ac
+      internalID: 5426233069968633707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_3
+      name: Unity_Total 1_3
       rect:
         serializedVersion: 2
         x: 51
@@ -310,20 +322,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75918c5a42b27f44a8b33013dfb31a4b
-      internalID: 5425857887288675639
+      spriteID: d497f8d53e5f49d498900e7c75379a80
+      internalID: -2884748048744382426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_4
+      name: Unity_Total 1_4
       rect:
         serializedVersion: 2
         x: 68
@@ -331,20 +343,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3707de84b87b7a64db43e345dd97d3ab
-      internalID: -7005091877032163258
+      spriteID: 1992c2a982763a445b60e4ca615fc3e0
+      internalID: 868172746669654078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_5
+      name: Unity_Total 1_5
       rect:
         serializedVersion: 2
         x: 85
@@ -352,20 +364,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 662a491ad10cc5647b4ba73fb5c87377
-      internalID: 9185193598801911995
+      spriteID: 4ed2c0cadda19964e9d901f4c7d34935
+      internalID: -8645727870693508996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_6
+      name: Unity_Total 1_6
       rect:
         serializedVersion: 2
         x: 102
@@ -373,20 +385,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6bbb966da9adeb48b8bd76ce7e87a42
-      internalID: 3107696228168304465
+      spriteID: 67d5f40ff3ddcf7459e6ae137f1d9a0a
+      internalID: 3750247430753468565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_7
+      name: Unity_Total 1_7
       rect:
         serializedVersion: 2
         x: 0
@@ -394,20 +406,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96103d0cbd3874c4699705bed3d08d29
-      internalID: -7658797541089580615
+      spriteID: 46971c2c7125c5f47a9e9a83fa7324e5
+      internalID: -9146799943763225791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_8
+      name: Unity_Total 1_8
       rect:
         serializedVersion: 2
         x: 17
@@ -415,20 +427,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce7b3ed30d668b946b44b09166367cb8
-      internalID: 6606969042926007223
+      spriteID: ac01dbb4a6a0fb946b3a2a5339a3587b
+      internalID: 6455187086793116428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_9
+      name: Unity_Total 1_9
       rect:
         serializedVersion: 2
         x: 34
@@ -436,20 +448,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d8bfd8fdf1a01c4bb66c2d750dd07d4
-      internalID: -6704307026658931648
+      spriteID: 7391751f73b26ba4e8f2165ef59bcc0d
+      internalID: -1754995269738613873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_10
+      name: Unity_Total 1_10
       rect:
         serializedVersion: 2
         x: 51
@@ -457,20 +469,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68319295b796e4e43bffb47feeb02691
-      internalID: 703034217862325858
+      spriteID: 7349386e68153594e9749e1786eefe6e
+      internalID: 3514616007233692715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_11
+      name: Unity_Total 1_11
       rect:
         serializedVersion: 2
         x: 68
@@ -478,20 +490,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1177069ed38217a44909f0afe006aaa7
-      internalID: 8274781135772396960
+      spriteID: acffa3e2506ca6a498fc473cd4ae9c1e
+      internalID: -8621311656029419490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_12
+      name: Unity_Total 1_12
       rect:
         serializedVersion: 2
         x: 85
@@ -499,20 +511,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ee2606a9371fbd4293df488ff1bf27c
-      internalID: -4414332706649173197
+      spriteID: 173a1fac75a3d3e4c9cde71334f9f9e3
+      internalID: -6505055234290768160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_13
+      name: Unity_Total 1_13
       rect:
         serializedVersion: 2
         x: 102
@@ -520,20 +532,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0da794c0299b46641a965ebf248b852e
-      internalID: -1483939482431683036
+      spriteID: f43f3861a42e1424f8632ead3ca5df1b
+      internalID: -3317468835217796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_14
+      name: Unity_Total 1_14
       rect:
         serializedVersion: 2
         x: 0
@@ -541,20 +553,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de44080d1277f4d4983a01d6459f3d56
-      internalID: -5680049090636905295
+      spriteID: 8bfc5655f984a7d4dab289129ef1ca34
+      internalID: -8895168580795560318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_15
+      name: Unity_Total 1_15
       rect:
         serializedVersion: 2
         x: 17
@@ -562,20 +574,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9b89f2b7eb3b11449b01ce19cb4d304
-      internalID: 9002462068862205402
+      spriteID: 3ed28cc069f652940a1346cb88f57b1d
+      internalID: 405324893867456809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_16
+      name: Unity_Total 1_16
       rect:
         serializedVersion: 2
         x: 34
@@ -583,20 +595,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29b1af59207dec7408052eae1f3a7582
-      internalID: -7155799823189087263
+      spriteID: 51d37b519b0afa44e816f70cd299a024
+      internalID: 837601923436322745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_17
+      name: Unity_Total 1_17
       rect:
         serializedVersion: 2
         x: 51
@@ -604,20 +616,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54f9429d00d88df488ea073317964e6e
-      internalID: 6774883226420319184
+      spriteID: d1c3e772fff76d342a42ef4377faf864
+      internalID: 3558180485106525174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_18
+      name: Unity_Total 1_18
       rect:
         serializedVersion: 2
         x: 68
@@ -625,20 +637,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea11ff889b76de4ca11ab18d0fc5e54
-      internalID: -6834728901382564397
+      spriteID: 9981dd3ffbf4c9c418d6b03501004638
+      internalID: -4768996480054295583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_19
+      name: Unity_Total 1_19
       rect:
         serializedVersion: 2
         x: 85
@@ -646,20 +658,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0600711e628c98c4186af40f70c0d83d
-      internalID: -14168195098142594
+      spriteID: e23e6d0ec49b9f9479bc8da91332b114
+      internalID: -2082011617456459708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_20
+      name: Unity_Total 1_20
       rect:
         serializedVersion: 2
         x: 102
@@ -667,20 +679,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5272d0c0fdadaf14397f9c5c9e0ab4ba
-      internalID: 1760678286987067954
+      spriteID: 7ab9025d1eae16b4083ab12fa97f47bd
+      internalID: 113966138356048766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_21
+      name: Unity_Total 1_21
       rect:
         serializedVersion: 2
         x: 0
@@ -688,20 +700,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e6d1cb8d8dadc44b9dd7047f18d14a
-      internalID: 4654880880817408608
+      spriteID: b116653b29c77b5448fb2319a515902d
+      internalID: 2268411871607274132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_22
+      name: Unity_Total 1_22
       rect:
         serializedVersion: 2
         x: 17
@@ -709,20 +721,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49f63b792f3413e4e9f9d07a363cbcfe
-      internalID: 4496558758584660778
+      spriteID: 163ed769dbf7e5f4dbfc301f2234f668
+      internalID: 7064137384494111809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_23
+      name: Unity_Total 1_23
       rect:
         serializedVersion: 2
         x: 34
@@ -730,20 +742,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c60a4c21d9485684186075b89d1f3698
-      internalID: -6363282512455578156
+      spriteID: d1cb3b79fc9ca96449851640abc2338f
+      internalID: 8309575558689715239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_24
+      name: Unity_Total 1_24
       rect:
         serializedVersion: 2
         x: 51
@@ -751,20 +763,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8c645beee4bcbb4c98993b41fdec3ce
-      internalID: 4033245526651492944
+      spriteID: 7e6acc140029b0546be5989c320126fc
+      internalID: 8658453510336664214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_25
+      name: Unity_Total 1_25
       rect:
         serializedVersion: 2
         x: 68
@@ -772,20 +784,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aec0160987958134db8e4658e7652403
-      internalID: 8116867254835520128
+      spriteID: 5a509ab8d5542ac49844144211479636
+      internalID: -5533479937935526174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_26
+      name: Unity_Total 1_26
       rect:
         serializedVersion: 2
         x: 85
@@ -793,20 +805,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 636ef3a77240dbc4ea274c07a9453677
-      internalID: 3187604039473501465
+      spriteID: 3a16f1a52e2e27c408d9ae906eaa6124
+      internalID: -5265222838787742052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_27
+      name: Unity_Total 1_27
       rect:
         serializedVersion: 2
         x: 102
@@ -814,20 +826,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3a91aa71f8cce84f9a7b26904824bd0
-      internalID: 5780382313153524604
+      spriteID: d539378493cc5b147aa38fbd95af3832
+      internalID: -2599892676224176051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_28
+      name: Unity_Total 1_28
       rect:
         serializedVersion: 2
         x: 0
@@ -835,20 +847,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8728bf649e4c7249a11d1e14802fdd3
-      internalID: -5939969182554205122
+      spriteID: 7e58d621154fd2940a043072d17cada5
+      internalID: 5773831664765567725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_29
+      name: Unity_Total 1_29
       rect:
         serializedVersion: 2
         x: 17
@@ -856,20 +868,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a3485d8de056404d8a638198c68ea56
-      internalID: -8200304292230919726
+      spriteID: 5c494dc55f8717344984c678eacf13ee
+      internalID: 2715077692214912241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_30
+      name: Unity_Total 1_30
       rect:
         serializedVersion: 2
         x: 34
@@ -877,20 +889,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0aa1fd16d9467f4f83791f94c3dc338
-      internalID: 96859120212763493
+      spriteID: b27473af53862f94c9431edf061bfebf
+      internalID: -206391823286306075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_31
+      name: Unity_Total 1_31
       rect:
         serializedVersion: 2
         x: 51
@@ -898,20 +910,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99d1c97f90f03f6489cb33d6b9c623e2
-      internalID: -6325355327416373034
+      spriteID: 48880dc6d3c71f24abc42e587670b7e0
+      internalID: 5757574347545907870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_32
+      name: Unity_Total 1_32
       rect:
         serializedVersion: 2
         x: 68
@@ -919,20 +931,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4390d0b1ba20fe94588bbff36310ad78
-      internalID: 6261157910873503354
+      spriteID: 667fa19c46cee3f42a45fbc8d6b29801
+      internalID: -3336539827885329028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_33
+      name: Unity_Total 1_33
       rect:
         serializedVersion: 2
         x: 85
@@ -940,20 +952,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5e97b8033876da47b04af7317e66fe5
-      internalID: -5078997024141043720
+      spriteID: 43ca95181926507479475238e0550830
+      internalID: 2484041194361792321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_34
+      name: Unity_Total 1_34
       rect:
         serializedVersion: 2
         x: 102
@@ -961,20 +973,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cd13e8a8753db14c8fc1373f523b690
-      internalID: 8686088373614142292
+      spriteID: 513ced691d62e1c45b4a41459d156626
+      internalID: -4309020985544506223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_35
+      name: Unity_Total 1_35
       rect:
         serializedVersion: 2
         x: 0
@@ -982,20 +994,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf7bb1f6f96e07844a34b4f8b238af39
-      internalID: -303249146802058812
+      spriteID: 5d79c98b47edff448ab46d530dc30297
+      internalID: -9193216844534297930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_36
+      name: Unity_Total 1_36
       rect:
         serializedVersion: 2
         x: 17
@@ -1003,20 +1015,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4692b14301420b44f84d96e5da2691ca
-      internalID: 5824027634211521851
+      spriteID: 11713aab35187d047abf6e1c43a0f5a9
+      internalID: 3903944991481257659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_37
+      name: Unity_Total 1_37
       rect:
         serializedVersion: 2
         x: 34
@@ -1024,20 +1036,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af67b63f1de635546a58ddd4b9cca294
-      internalID: -3900523505314193648
+      spriteID: c4869d4a48a10514fab7c4ef0e8538a1
+      internalID: -4603680285816450908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_38
+      name: Unity_Total 1_38
       rect:
         serializedVersion: 2
         x: 51
@@ -1045,20 +1057,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66caa0594589dfe4da1a803a4c451ccf
-      internalID: -8115532553493304831
+      spriteID: a1e3377c14322dd4497b3439f2efd829
+      internalID: 8322486072795411976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_39
+      name: Unity_Total 1_39
       rect:
         serializedVersion: 2
         x: 68
@@ -1066,20 +1078,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56e1f79034a9c274cbc6f8620417a497
-      internalID: -6172563047141950411
+      spriteID: 00f92d348412db345929e04e0f8b445f
+      internalID: -8208268641973506167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_40
+      name: Unity_Total 1_40
       rect:
         serializedVersion: 2
         x: 85
@@ -1087,20 +1099,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ec8651f8e67ceb4f8049ce1e1416f81
-      internalID: 3277183234850852159
+      spriteID: d1fc321cec720fe42a9b253a5cef9052
+      internalID: -5195660533954261928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_41
+      name: Unity_Total 1_41
       rect:
         serializedVersion: 2
         x: 102
@@ -1108,25 +1120,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b34e42b7d1089594ebf689e3387db9ef
-      internalID: -8707768925722822036
+      spriteID: 6eefc188ce1fb27418d19f52be955b6c
+      internalID: 6839612023988084378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_42
+      name: Unity_Total 1_42
       rect:
         serializedVersion: 2
         x: 0
@@ -1134,25 +1141,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: -8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 181430da01a24634ea830036fbd9d950
-      internalID: 8641032650907249622
+      spriteID: 136d048e920aa234999307f46516840a
+      internalID: 7741184795697827516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_43
+      name: Unity_Total 1_43
       rect:
         serializedVersion: 2
         x: 17
@@ -1160,20 +1162,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 512b5d812d4d9d245a26c0081b3b71e2
-      internalID: -8881291844331521540
+      spriteID: bfd1d9469dda9294b813deb9df38416a
+      internalID: 8705693326151907742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_44
+      name: Unity_Total 1_44
       rect:
         serializedVersion: 2
         x: 34
@@ -1181,20 +1183,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea84bf65fa939f2419cbef54c8545bee
-      internalID: 3005166368454549941
+      spriteID: 6bb643b495ad1de42835a713a07e6875
+      internalID: -2443061290372253399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_45
+      name: Unity_Total 1_45
       rect:
         serializedVersion: 2
         x: 51
@@ -1202,26 +1204,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -1, y: -1}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 1, y: -1}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31644378adf054e4f9e92a47616fa512
-      internalID: 2928739609888741946
+      spriteID: f8eda8af000685844ab3b2ab7a2d6dc2
+      internalID: 2260679485819658291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byGoldMetal_46
+      name: Unity_Total 1_46
       rect:
         serializedVersion: 2
         x: 68
@@ -1229,14 +1225,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d5f18c1a909def469037353591f158d
-      internalID: 7106280103124522841
+      spriteID: 73a5abdf2dc6c0545bf520a2ff5f4d60
+      internalID: 6858994807579401917
       vertices: []
       indices: 
       edges: []
@@ -1244,7 +1240,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: fc301cc0912959843aafb2d2eb810643
     internalID: 0
     vertices: []
     indices: 

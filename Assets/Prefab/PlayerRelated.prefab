@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 5379845321866798718}
   - component: {fileID: 5379845321866798717}
   - component: {fileID: 5379845321866798716}
+  - component: {fileID: 326364506518221023}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -547,6 +548,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67458606, y: 0.87582874}
   m_EdgeRadius: 0
+--- !u!95 &326364506518221023
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5379845321866798714}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f36e04d3bdf1e74685f058701e2dbda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5379845321917943698
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +712,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.01512994, g: 0.18867922, b: 0.024029674, a: 0}
+  m_BackGroundColor: {r: 0.6415094, g: 0.18040814, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1503,7 +1523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf0f3a1c9e3362468975ce8606dcfe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentScene: Tutorial
+  CurrentScene: Level3
 --- !u!1 &8506018455419051598
 GameObject:
   m_ObjectHideFlags: 0

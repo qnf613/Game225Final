@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        //anima = GetComponent<Animator>();
+        anima = GetComponent<Animator>();
         StartCoroutine("ChangeMovement");
         
     }
@@ -56,14 +56,14 @@ public class Enemy : MonoBehaviour
     {
         //moving && animations
         rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
-        //if (rigid.velocity.normalized.x != 0)
-        //{
-        //    anima.SetBool("isWalking", true);
-        //}
-        //else
-        //{
-        //    anima.SetBool("isWalking", false);
-        //}
+        if (rigid.velocity.normalized.x != 0)
+        {
+            anima.SetBool("isWalking", true);
+        }
+        else
+        {
+            anima.SetBool("isWalking", false);
+        }
         if (isChasing)
         {
             Vector3 targetPos = target.transform.position;
@@ -107,11 +107,11 @@ public class Enemy : MonoBehaviour
     {
         //decide left -1, stop 0, right 1
         nextMove = Random.Range(-1, 2);
-        ////flip the sprites when it facing right side
-        //if (nextMove != 0)
-        //{
-        //    spriteRenderer.flipX = nextMove == 1;
-        //}
+        //flip the sprites when it facing right side
+        if (nextMove != 0)
+        {
+            spriteRenderer.flipX = nextMove == 1;
+        }
         //makes the enemy's direction deciding more randomly
         float nextDirectionTime = Random.Range(2f, 4f);
         yield return new WaitForSeconds(nextDirectionTime);

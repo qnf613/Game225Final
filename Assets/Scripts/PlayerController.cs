@@ -44,22 +44,26 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //movement speed
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float xVelocity = horizontalInput * speed;
-        rigid.velocity = new Vector2(xVelocity, rigid.velocity.y);
-        
-        //stop speed
+        //animation direction   
+        if (Input.GetButtonDown("Horizontal"))
+        {
+            spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+        }
+        //animations
         if (Input.GetButtonUp("Horizontal"))
         {
-            rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
+            animator.SetBool("isWalking", false);
         }
-        
-        //jump & double jump
+        else if (Input.GetButtonDown("Horizontal"))
+        {
+            animator.SetBool("isWalking", true);
+        }
+
+        //jump & double jump and animation for it
         if (Input.GetButtonDown("Jump") && jumpcount < 2)
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-            
+            animator.SetBool("isJumping", true);
             if (jumpcount > 0 && jumpcount < 2) 
             {
                 rigid.velocity = Vector2.zero;
@@ -68,7 +72,17 @@ public class PlayerController : MonoBehaviour
             jumpcount++;
         }
 
-        
+        //movement speed
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float xVelocity = horizontalInput * speed;
+        rigid.velocity = new Vector2(xVelocity, rigid.velocity.y);
+
+        //stop speed
+        if (Input.GetButtonUp("Horizontal"))
+        {
+            rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
+        }
+
         //these are logic of abilities' cool-down but written here for UI displaying.
         Ability1.curtime1 -= Time.deltaTime;
         Ability2.curtime2 -= Time.deltaTime;
@@ -189,6 +203,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             jumpcount = 0;
+            animator.SetBool("isJumping", false);
         }
 
     }

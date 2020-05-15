@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7323742236441265048}
   - component: {fileID: 7323742236441265049}
   - component: {fileID: 6465295852208320818}
+  - component: {fileID: -4324498869068958236}
   m_Layer: 12
   m_Name: Chaser
   m_TagString: Enemy
@@ -164,3 +165,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.25
+--- !u!95 &-4324498869068958236
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7323742236441265055}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 544828608e1c64f459efd4b1736e4098, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
