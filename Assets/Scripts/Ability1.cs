@@ -26,9 +26,9 @@ public class Ability1 : MonoBehaviour
         //available condition & cool down
         if (usable)
         {
-            //TODO: SE
             if (Input.GetMouseButtonDown(0))
             {
+                SoundManager.instance.PlayShoot();
                 Instantiate(bullet, transform.position, transform.rotation);
                 curtime1 = cooltime;
                 usable = false;

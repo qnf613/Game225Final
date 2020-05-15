@@ -25,7 +25,10 @@ public class Ability3 : MonoBehaviour
     private void Update()
     {
         //active condition
-        //TODO: SE
+        if (Input.GetMouseButtonDown(0) && curtime3 < 0f)
+        {
+            SoundManager.instance.PlayBarrier();
+        }
         if (Input.GetMouseButton(0) && curtime3 < 0f)
         {
             //duration check

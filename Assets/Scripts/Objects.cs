@@ -12,7 +12,6 @@ public class Objects : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
     }
     
 
@@ -22,8 +21,16 @@ public class Objects : MonoBehaviour
         {
             this.rigid.transform.position = rigid.transform.position;
         }
-        
+
+        if (collision.gameObject.CompareTag("Player") && (gameObject.CompareTag("GetBarrier") || gameObject.CompareTag("GetMover")))
+        {
+            SoundManager.instance.newAbility();
+        }
+
+
     }
     
+
+
 
 }

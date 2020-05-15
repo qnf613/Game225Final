@@ -20,7 +20,8 @@ public class Ability2 : MonoBehaviour
     private bool isUsing = false;
     //for fixed update
     private bool btPressed = false;
-
+    //for audio play
+    private bool sePlaying = false;
     // Start is called before the first frame update
     private void Start()
     {
@@ -41,11 +42,11 @@ public class Ability2 : MonoBehaviour
         }
 
         //check duration and
-        else if (Input.GetMouseButton(0) && curtime2 < 0f && movingObject != null && PlayerController.abSwitch == 2)
+        else if (Input.GetMouseButton(0) && curtime2 < 0f && movingObject != null)
         {
             //trigger physics engine movement
             btPressed = true;
-            if (movingObject.CompareTag("MovableOb") && duration <= maxDuration)
+            if (duration <= maxDuration)
             {
                 isUsing = true;
                 duration += Time.deltaTime;
@@ -86,10 +87,11 @@ public class Ability2 : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
 
-        if (hit.collider != null)
+        if (hit.collider != null && hit.collider.gameObject.CompareTag("MovableOb"))
         {
             movingObject = hit.collider.gameObject;
             objRigid = movingObject.GetComponent<Rigidbody2D>();
+            SoundManager.instance.PlayMove();
 
         }
         else

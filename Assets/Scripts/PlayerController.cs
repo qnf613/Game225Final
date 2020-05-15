@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    //TODO: animation
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private int jumpcount = 0;
@@ -64,6 +63,7 @@ public class PlayerController : MonoBehaviour
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             animator.SetBool("isJumping", true);
+            SoundManager.instance.PlayJump();
             if (jumpcount > 0 && jumpcount < 2) 
             {
                 rigid.velocity = Vector2.zero;
@@ -219,7 +219,7 @@ public class PlayerController : MonoBehaviour
 
     void Damaged()
     {
-        //TODO: Sound
+        SoundManager.instance.PlayDamaged();
         isContacted = true;
         HP -= 1;
         spriteRenderer.color = new Color(1, 1, 1, .4f);
