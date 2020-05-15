@@ -38,6 +38,10 @@ public class PlayerController : MonoBehaviour
         Mover.SetActive(false);
         Barrier.SetActive(false);
         Freezer.SetActive(false);
+        if (abSwitch != 1)
+        {
+            abSwitch = 1;
+        }
     }
 
     // Update is called once per frame
@@ -186,17 +190,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        //being damaged
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Obstacle")
-            || collision.gameObject.CompareTag("NP.Projectile"))
-        {
-            Damaged();
-        }
-
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //re-set jump count
@@ -208,6 +201,21 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        //being damaged
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Obstacle")
+            || collision.gameObject.CompareTag("NP.Projectile"))
+        {
+            Damaged();
+        }
+
+        if (jumpcount == 2)
+        {
+            jumpcount = 0;
+        }
+
+    }
 
     private void OnCollisionExit2D(Collision2D collision)
     {

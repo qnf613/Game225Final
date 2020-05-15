@@ -229,7 +229,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595466488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00000021376}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1467563921}
@@ -237,8 +237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 997, y: 105.7}
-  m_SizeDelta: {x: 340.9, y: 173.2}
+  m_AnchoredPosition: {x: 997, y: 123.1}
+  m_SizeDelta: {x: 340.9, y: 207.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595466490
 MonoBehaviour:
@@ -272,7 +272,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Press E again to select Mover. You can move some objects by dragging them
-    up to 3 seconds. While you moving something, you can't move yourself.
+    up to 3 seconds. While you moving something (meaning holding mouse click), your
+    position will freeze.
 --- !u!222 &595466491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -550,7 +551,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Move to Left - A, Right - D, Jump-Space (up to twice)
+  m_Text: 'Move to Left - A, Right - D, Jump-Space (up to twice)
+
+    You can quit game immediately by ESC.'
 --- !u!222 &842144599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -865,6 +868,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1167856090}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1159621591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 362.634
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 317.67087
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -121.36371
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687733026036458058, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054798745897241159, guid: 7c75e2e978e33f6448e54ac0e72287d6,
+        type: 3}
+      propertyPath: m_Name
+      value: ForceQuit
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c75e2e978e33f6448e54ac0e72287d6, type: 3}
 --- !u!1001 &1167856090
 PrefabInstance:
   m_ObjectHideFlags: 0
